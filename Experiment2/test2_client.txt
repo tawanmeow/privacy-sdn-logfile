@@ -1,0 +1,835 @@
+# Tawannnnnnnn :)
+# Experiment 2
+# Find maximum throughput by sending packets from Edge4 to Edge1 and Edge5 simultaneously.
+# Edge4 perspective (Client)
+# Command: $iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201 & iperf3 -u -c 10.0.0.5 -T edge5 -b0 -t 30s -i1 -p 5202
+-----------------------------------------------------------
+*
+[1] 1179
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge1:  [  5] local 10.0.0.4 port 60991 connected to 10.0.0.1 port 5201
+edge5:  [  5] local 10.0.0.4 port 48228 connected to 10.0.0.5 port 5202
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]   1.00-2.00   sec  1.75 MBytes  14.7 Mbits/sec  1270
+edge5:  [  5]   1.00-2.00   sec  1.74 MBytes  14.6 Mbits/sec  1260
+edge1:  [  5]   2.00-3.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   2.00-3.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   3.00-4.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   3.00-4.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   5.00-6.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   6.00-7.00   sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]   6.00-7.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   7.00-8.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   7.00-8.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   8.00-9.00   sec  1.92 MBytes  16.1 Mbits/sec  1390
+edge5:  [  5]   8.00-9.00   sec  1.92 MBytes  16.1 Mbits/sec  1390
+edge1:  [  5]   9.00-10.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   9.00-10.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  10.00-11.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  10.00-11.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  11.00-12.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  11.00-12.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  12.00-13.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  [  5]  12.00-13.00  sec  1.77 MBytes  14.8 Mbits/sec  1280
+edge1:  [  5]  13.00-14.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  13.00-14.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  14.00-15.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  14.00-15.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]  15.00-16.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  15.00-16.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  16.00-17.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  16.00-17.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  17.00-18.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  17.00-18.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  18.00-19.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  18.00-19.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  19.00-20.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]  19.00-20.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]  20.00-21.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  20.00-21.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]  21.00-22.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  21.00-22.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  22.00-23.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]  22.00-23.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  23.00-24.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  23.00-24.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  24.00-25.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  24.00-25.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  25.00-26.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  [  5]  25.00-26.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge1:  [  5]  26.00-27.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  26.00-27.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]  27.00-28.00  sec  1.92 MBytes  16.1 Mbits/sec  1390
+edge5:  [  5]  27.00-28.00  sec  1.92 MBytes  16.1 Mbits/sec  1390
+edge1:  [  5]  28.00-29.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  28.00-29.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  29.00-30.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  56.0 MBytes  15.7 Mbits/sec  0.000 ms  0/40540 (0%)  sender
+edge1:  [  5]   0.00-30.05  sec  56.0 MBytes  15.6 Mbits/sec  1.241 ms  0/40538 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  29.00-30.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  55.9 MBytes  15.6 Mbits/sec  0.000 ms  0/40500 (0%)  sender
+edge5:  [  5]   0.00-30.06  sec  55.9 MBytes  15.6 Mbits/sec  1.135 ms  0/40497 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1187
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge1:  [  5] local 10.0.0.4 port 58795 connected to 10.0.0.1 port 5201
+edge5:  [  5] local 10.0.0.4 port 55216 connected to 10.0.0.5 port 5202
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  1.99 MBytes  16.7 Mbits/sec  1440
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.96 MBytes  16.4 Mbits/sec  1420
+edge1:  [  5]   1.00-2.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   1.00-2.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   2.00-3.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   2.00-3.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   3.00-4.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   3.00-4.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   4.00-5.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   4.00-5.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   6.00-7.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   6.00-7.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   7.00-8.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   7.00-8.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   8.00-9.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   8.00-9.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   9.00-10.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   9.00-10.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  10.00-11.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  10.00-11.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  11.00-12.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  11.00-12.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  12.00-13.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  12.00-13.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  13.00-14.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]  13.00-14.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]  14.00-15.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  14.00-15.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  15.00-16.00  sec  1.77 MBytes  14.8 Mbits/sec  1280
+edge5:  [  5]  15.00-16.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge1:  [  5]  16.00-17.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  16.00-17.00  sec  1.88 MBytes  15.7 Mbits/sec  1360
+edge1:  [  5]  17.00-18.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  17.00-18.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  18.00-19.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  18.00-19.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  19.00-20.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  19.00-20.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  20.00-21.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  20.00-21.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  21.00-22.00  sec  1.88 MBytes  15.7 Mbits/sec  1360
+edge5:  [  5]  21.00-22.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  22.00-23.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  22.00-23.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  23.00-24.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  23.00-24.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  24.00-25.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  24.00-25.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  25.00-26.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  25.00-26.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  26.00-27.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  26.00-27.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  27.00-28.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  27.00-28.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  28.00-29.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  28.00-29.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  29.00-30.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  55.9 MBytes  15.6 Mbits/sec  0.000 ms  0/40510 (0%)  sender
+edge1:  [  5]   0.00-30.05  sec  55.9 MBytes  15.6 Mbits/sec  1.215 ms  0/40508 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  29.00-30.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  55.9 MBytes  15.6 Mbits/sec  0.000 ms  0/40500 (0%)  sender
+edge5:  [  5]   0.00-30.06  sec  55.9 MBytes  15.6 Mbits/sec  0.798 ms  0/40498 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1193
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge1:  [  5] local 10.0.0.4 port 49546 connected to 10.0.0.1 port 5201
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  3.94 MBytes  33.0 Mbits/sec  2850
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge5:  [  5] local 10.0.0.4 port 37750 connected to 10.0.0.5 port 5202
+edge1:  [  5]   1.00-2.00   sec  2.36 MBytes  19.8 Mbits/sec  1710
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   2.00-3.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   1.00-2.00   sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]   3.00-4.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   2.00-3.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   4.00-5.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   3.00-4.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   5.00-6.00   sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  [  5]   4.00-5.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]   6.00-7.00   sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]   5.00-6.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   7.00-8.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]   6.00-7.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]   8.00-9.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   9.00-10.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   8.00-9.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  10.00-11.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   9.00-10.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  11.00-12.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  10.00-11.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  12.00-13.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  11.00-12.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  12.00-13.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  14.00-15.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  13.00-14.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  15.00-16.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  14.00-15.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  16.00-17.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  15.00-16.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  17.00-18.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  16.00-17.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  18.00-19.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  17.00-18.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  19.00-20.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  18.00-19.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  20.00-21.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  19.00-20.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]  21.00-22.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  20.00-21.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  22.00-23.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  21.00-22.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  23.00-24.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  22.00-23.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]  24.00-25.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  23.00-24.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  25.00-26.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  24.00-25.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  26.00-27.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  25.00-26.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  27.00-28.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  26.00-27.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  28.00-29.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  27.00-28.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  29.00-30.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  58.7 MBytes  16.4 Mbits/sec  0.000 ms  0/42490 (0%)  sender
+edge1:  [  5]   0.00-30.06  sec  58.7 MBytes  16.4 Mbits/sec  1.159 ms  0/42490 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  28.00-29.00  sec  2.21 MBytes  18.5 Mbits/sec  1600
+edge5:  [  5]  29.00-30.00  sec  3.71 MBytes  31.2 Mbits/sec  2690
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  58.3 MBytes  16.3 Mbits/sec  0.000 ms  0/42230 (0%)  sender
+edge5:  [  5]   0.00-30.05  sec  58.3 MBytes  16.3 Mbits/sec  0.544 ms  0/42227 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done
+
+**************************************************************************************
+
+[1] 1198
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge1:  [  5] local 10.0.0.4 port 36071 connected to 10.0.0.1 port 5201
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  3.95 MBytes  33.1 Mbits/sec  2860
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge5:  [  5] local 10.0.0.4 port 57994 connected to 10.0.0.5 port 5202
+edge1:  [  5]   1.00-2.00   sec  2.24 MBytes  18.8 Mbits/sec  1620
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   2.00-3.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   2.00-3.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   4.00-5.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   3.00-4.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   5.00-6.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   4.00-5.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   6.00-7.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   5.00-6.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   6.00-7.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   8.00-9.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   7.00-8.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   9.00-10.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   8.00-9.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  10.00-11.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   9.00-10.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  11.00-12.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  10.00-11.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  12.00-13.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  11.00-12.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  12.00-13.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  14.00-15.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  [  5]  13.00-14.00  sec  1.75 MBytes  14.7 Mbits/sec  1270
+edge1:  [  5]  15.00-16.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  14.00-15.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  16.00-17.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  15.00-16.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  17.00-18.00  sec  1.92 MBytes  16.1 Mbits/sec  1390
+edge5:  [  5]  16.00-17.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]  18.00-19.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  17.00-18.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  19.00-20.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  18.00-19.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  20.00-21.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  19.00-20.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  21.00-22.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  20.00-21.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  22.00-23.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  21.00-22.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  23.00-24.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  22.00-23.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  24.00-25.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]  23.00-24.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  25.00-26.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  24.00-25.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  26.00-27.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge5:  [  5]  25.00-26.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  27.00-28.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  26.00-27.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  28.00-29.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  27.00-28.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  28.00-29.00  sec  2.06 MBytes  17.3 Mbits/sec  1490
+edge1:  [  5]  29.00-30.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  58.4 MBytes  16.3 Mbits/sec  0.000 ms  0/42280 (0%)  sender
+edge1:  [  5]   0.00-30.05  sec  58.4 MBytes  16.3 Mbits/sec  0.965 ms  0/42278 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  29.00-30.00  sec  3.70 MBytes  31.0 Mbits/sec  2680
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  58.0 MBytes  16.2 Mbits/sec  0.000 ms  0/42010 (0%)  sender
+edge5:  [  5]   0.00-30.05  sec  58.0 MBytes  16.2 Mbits/sec  0.465 ms  0/42010 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1202
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge1:  [  5] local 10.0.0.4 port 55613 connected to 10.0.0.1 port 5201
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  3.98 MBytes  33.4 Mbits/sec  2880
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge5:  [  5] local 10.0.0.4 port 50124 connected to 10.0.0.5 port 5202
+edge1:  [  5]   1.00-2.00   sec  2.28 MBytes  19.1 Mbits/sec  1650
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   2.00-3.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   2.00-3.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   4.00-5.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   3.00-4.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   5.00-6.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   4.00-5.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   6.00-7.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   5.00-6.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   6.00-7.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   8.00-9.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   9.00-10.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   8.00-9.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  10.00-11.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   9.00-10.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  11.00-12.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  10.00-11.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  12.00-13.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  11.00-12.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  13.00-14.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  12.00-13.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  14.00-15.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  15.00-16.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  14.00-15.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  16.00-17.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  15.00-16.00  sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]  17.00-18.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  16.00-17.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  18.00-19.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  17.00-18.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  19.00-20.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  18.00-19.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  20.00-21.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  19.00-20.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  21.00-22.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  20.00-21.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  22.00-23.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  21.00-22.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  23.00-24.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  22.00-23.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  24.00-25.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  23.00-24.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]  25.00-26.00  sec  1.88 MBytes  15.7 Mbits/sec  1360
+edge5:  [  5]  24.00-25.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  26.00-27.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  25.00-26.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]  27.00-28.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]  26.00-27.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  28.00-29.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  27.00-28.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  29.00-30.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  58.3 MBytes  16.3 Mbits/sec  0.000 ms  0/42240 (0%)  sender
+edge1:  [  5]   0.00-30.05  sec  58.3 MBytes  16.3 Mbits/sec  1.197 ms  0/42239 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  28.00-29.00  sec  2.11 MBytes  17.7 Mbits/sec  1530
+edge5:  [  5]  29.00-30.00  sec  3.73 MBytes  31.3 Mbits/sec  2700
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  58.0 MBytes  16.2 Mbits/sec  0.000 ms  0/41980 (0%)  sender
+edge5:  [  5]   0.00-30.05  sec  58.0 MBytes  16.2 Mbits/sec  0.413 ms  0/41978 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1214
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge1:  [  5] local 10.0.0.4 port 47289 connected to 10.0.0.1 port 5201
+edge5:  [  5] local 10.0.0.4 port 48853 connected to 10.0.0.5 port 5202
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  1.73 MBytes  14.5 Mbits/sec  1250
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  2.22 MBytes  18.6 Mbits/sec  1610
+edge1:  [  5]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   2.00-3.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   2.00-3.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   3.00-4.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   4.00-5.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   4.00-5.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   5.00-6.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   5.00-6.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   6.00-7.00   sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]   6.00-7.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   8.00-9.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]   8.00-9.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]   9.00-10.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   9.00-10.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  10.00-11.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]  10.00-11.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]  11.00-12.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]  11.00-12.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  12.00-13.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  12.00-13.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  13.00-14.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  13.00-14.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  14.00-15.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  14.00-15.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  15.00-16.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  15.00-16.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  16.00-17.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  16.00-17.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  17.00-18.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  17.00-18.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  18.00-19.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  18.00-19.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  19.00-20.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  19.00-20.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  20.00-21.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  20.00-21.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  21.00-22.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]  21.00-22.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]  22.00-23.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  22.00-23.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  23.00-24.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  23.00-24.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  24.00-25.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  24.00-25.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]  25.00-26.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  25.00-26.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  26.00-27.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  26.00-27.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]  27.00-28.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  27.00-28.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  28.00-29.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  28.00-29.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  29.00-30.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  55.6 MBytes  15.5 Mbits/sec  0.000 ms  0/40250 (0%)  sender
+edge5:  [  5]   0.00-30.05  sec  55.6 MBytes  15.5 Mbits/sec  1.180 ms  0/40248 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+edge1:  [  5]  29.00-30.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  55.1 MBytes  15.4 Mbits/sec  0.000 ms  0/39900 (0%)  sender
+edge1:  [  5]   0.00-30.06  sec  55.1 MBytes  15.4 Mbits/sec  0.918 ms  0/39898 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1223
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge1:  [  5] local 10.0.0.4 port 58091 connected to 10.0.0.1 port 5201
+edge5:  [  5] local 10.0.0.4 port 57368 connected to 10.0.0.5 port 5202
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  2.00 MBytes  16.8 Mbits/sec  1450
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.91 MBytes  16.0 Mbits/sec  1380
+edge1:  [  5]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   2.00-3.00   sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]   2.00-3.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   4.00-5.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   4.00-5.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   5.00-6.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]   5.00-6.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   6.00-7.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   6.00-7.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   7.00-8.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   8.00-9.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   8.00-9.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   9.00-10.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]   9.00-10.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  10.00-11.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]  10.00-11.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]  11.00-12.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  11.00-12.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  12.00-13.00  sec  1.74 MBytes  14.6 Mbits/sec  1260
+edge5:  [  5]  12.00-13.00  sec  1.74 MBytes  14.6 Mbits/sec  1260
+edge1:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  14.00-15.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  14.00-15.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  15.00-16.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  15.00-16.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  16.00-17.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  16.00-17.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  17.00-18.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  17.00-18.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  18.00-19.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  18.00-19.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  19.00-20.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  19.00-20.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  20.00-21.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  20.00-21.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  21.00-22.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  21.00-22.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  22.00-23.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  22.00-23.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  23.00-24.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  23.00-24.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  24.00-25.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  24.00-25.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  25.00-26.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  25.00-26.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  26.00-27.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  26.00-27.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  27.00-28.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  27.00-28.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  28.00-29.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  28.00-29.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  29.00-30.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  55.4 MBytes  15.5 Mbits/sec  0.000 ms  0/40150 (0%)  sender
+edge5:  [  5]   0.00-30.05  sec  55.4 MBytes  15.5 Mbits/sec  1.265 ms  0/40147 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+edge1:  [  5]  29.00-30.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  55.6 MBytes  15.5 Mbits/sec  0.000 ms  0/40230 (0%)  sender
+edge1:  [  5]   0.00-30.07  sec  55.6 MBytes  15.5 Mbits/sec  0.755 ms  0/40230 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1230
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge1:  [  5] local 10.0.0.4 port 41608 connected to 10.0.0.1 port 5201
+edge5:  [  5] local 10.0.0.4 port 35094 connected to 10.0.0.5 port 5202
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  2.07 MBytes  17.4 Mbits/sec  1500
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   1.00-2.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   2.00-3.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   2.00-3.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   3.00-4.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   4.00-5.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   5.00-6.00   sec  1.77 MBytes  14.8 Mbits/sec  1280
+edge5:  [  5]   5.00-6.00   sec  1.77 MBytes  14.8 Mbits/sec  1280
+edge1:  [  5]   6.00-7.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   6.00-7.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   7.00-8.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   7.00-8.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   8.00-9.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]   8.00-9.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   9.00-10.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   9.00-10.01  sec  1.85 MBytes  15.4 Mbits/sec  1340
+edge1:  [  5]  10.00-11.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  10.01-11.00  sec  1.85 MBytes  15.7 Mbits/sec  1340
+edge1:  [  5]  11.00-12.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  11.00-12.01  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  12.00-13.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  12.01-13.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  14.00-15.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]  14.00-15.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]  15.00-16.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  15.00-16.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  16.00-17.00  sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]  16.00-17.01  sec  1.88 MBytes  15.7 Mbits/sec  1360
+edge1:  [  5]  17.00-18.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  17.01-18.00  sec  1.84 MBytes  15.5 Mbits/sec  1330
+edge1:  [  5]  18.00-19.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  18.00-19.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  19.00-20.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  19.00-20.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  20.00-21.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  20.00-21.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  21.00-22.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]  21.00-22.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]  22.00-23.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  [  5]  22.00-23.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge1:  [  5]  23.00-24.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  23.00-24.01  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  24.00-25.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  24.01-25.00  sec  1.85 MBytes  15.6 Mbits/sec  1340
+edge1:  [  5]  25.00-26.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]  25.00-26.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]  26.00-27.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  26.00-27.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  27.00-28.00  sec  1.74 MBytes  14.6 Mbits/sec  1260
+edge5:  [  5]  27.00-28.00  sec  1.74 MBytes  14.6 Mbits/sec  1260
+edge1:  [  5]  28.00-29.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  28.00-29.01  sec  1.84 MBytes  15.3 Mbits/sec  1330
+edge1:  [  5]  29.00-30.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  55.4 MBytes  15.5 Mbits/sec  0.000 ms  0/40110 (0%)  sender
+edge1:  [  5]   0.00-30.06  sec  55.4 MBytes  15.5 Mbits/sec  1.153 ms  0/40109 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  29.01-30.00  sec  1.84 MBytes  15.5 Mbits/sec  1330
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  55.2 MBytes  15.4 Mbits/sec  0.000 ms  0/39960 (0%)  sender
+edge5:  [  5]   0.00-30.07  sec  55.2 MBytes  15.4 Mbits/sec  0.851 ms  0/39958 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1243
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge1:  [  5] local 10.0.0.4 port 51095 connected to 10.0.0.1 port 5201
+edge5:  [  5] local 10.0.0.4 port 58166 connected to 10.0.0.5 port 5202
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  2.00 MBytes  16.8 Mbits/sec  1450
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.93 MBytes  16.2 Mbits/sec  1400
+edge1:  [  5]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   1.00-2.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   2.00-3.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   2.00-3.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   4.00-5.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]   4.00-5.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]   5.00-6.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]   5.00-6.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   6.00-7.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   6.00-7.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   7.00-8.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   7.00-8.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   8.00-9.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]   8.00-9.00   sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]   9.00-10.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   9.00-10.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  10.00-11.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  10.00-11.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  11.00-12.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]  11.00-12.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]  12.00-13.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  12.00-13.00  sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge1:  [  5]  13.00-14.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  14.00-15.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  14.00-15.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  15.00-16.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  15.00-16.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  16.00-17.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  16.00-17.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  17.00-18.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  [  5]  17.00-18.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge1:  [  5]  18.00-19.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  18.00-19.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  19.00-20.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  19.00-20.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  20.00-21.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  20.00-21.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  21.00-22.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  21.00-22.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  22.00-23.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  22.00-23.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  23.00-24.00  sec  1.88 MBytes  15.7 Mbits/sec  1360
+edge5:  [  5]  23.00-24.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  24.00-25.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  24.00-25.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  25.00-26.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  25.00-26.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  26.00-27.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  26.00-27.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  27.00-28.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  27.00-28.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  28.00-29.00  sec  1.77 MBytes  14.8 Mbits/sec  1280
+edge5:  [  5]  28.00-29.00  sec  1.77 MBytes  14.8 Mbits/sec  1280
+edge1:  [  5]  29.00-30.00  sec  1.78 MBytes  15.0 Mbits/sec  1290
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  55.3 MBytes  15.5 Mbits/sec  0.000 ms  0/40080 (0%)  sender
+edge1:  [  5]   0.00-30.06  sec  55.3 MBytes  15.4 Mbits/sec  0.993 ms  0/40079 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  29.00-30.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  55.3 MBytes  15.5 Mbits/sec  0.000 ms  0/40020 (0%)  sender
+edge5:  [  5]   0.00-30.07  sec  55.3 MBytes  15.4 Mbits/sec  0.982 ms  0/40017 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
+
+**************************************************************************************
+
+[1] 1250
+edge1:  Connecting to host 10.0.0.1, port 5201
+edge5:  Connecting to host 10.0.0.5, port 5202
+edge1:  [  5] local 10.0.0.4 port 59233 connected to 10.0.0.1 port 5201
+edge5:  [  5] local 10.0.0.4 port 55242 connected to 10.0.0.5 port 5202
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  2.07 MBytes  17.4 Mbits/sec  1500
+edge5:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge5:  [  5]   0.00-1.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge1:  [  5]   1.00-2.00   sec  1.75 MBytes  14.7 Mbits/sec  1270
+edge5:  [  5]   1.00-2.00   sec  1.77 MBytes  14.8 Mbits/sec  1280
+edge1:  [  5]   2.00-3.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]   2.00-3.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]   3.00-4.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   3.00-4.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   4.00-5.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge5:  [  5]   4.00-5.00   sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]   5.00-6.00   sec  1.81 MBytes  15.2 Mbits/sec  1310
+edge5:  [  5]   5.00-6.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]   6.00-7.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]   6.00-7.00   sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]   7.00-8.00   sec  1.89 MBytes  15.9 Mbits/sec  1370
+edge5:  [  5]   7.00-8.00   sec  1.88 MBytes  15.7 Mbits/sec  1360
+edge1:  [  5]   8.00-9.00   sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]   8.00-9.00   sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]   9.00-10.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]   9.00-10.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  10.00-11.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  10.00-11.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  11.00-12.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  11.00-12.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  12.00-13.00  sec  1.78 MBytes  14.9 Mbits/sec  1290
+edge5:  [  5]  12.00-13.00  sec  1.80 MBytes  15.1 Mbits/sec  1300
+edge1:  [  5]  13.00-14.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  13.00-14.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  14.00-15.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  14.00-15.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge1:  [  5]  15.00-16.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  15.00-16.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  16.00-17.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  16.00-17.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  17.00-18.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  17.00-18.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  18.00-19.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  18.00-19.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  19.00-20.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge5:  [  5]  19.00-20.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  20.00-21.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  20.00-21.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge1:  [  5]  21.00-22.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  21.00-22.00  sec  1.82 MBytes  15.3 Mbits/sec  1320
+edge1:  [  5]  22.00-23.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  22.00-23.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  23.00-24.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  23.00-24.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  24.00-25.00  sec  1.73 MBytes  14.5 Mbits/sec  1250
+edge5:  [  5]  24.00-25.00  sec  1.73 MBytes  14.5 Mbits/sec  1250
+edge1:  [  5]  25.00-26.00  sec  1.84 MBytes  15.4 Mbits/sec  1330
+edge5:  [  5]  25.00-26.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  26.00-27.00  sec  1.88 MBytes  15.8 Mbits/sec  1360
+edge5:  [  5]  26.00-27.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  27.00-28.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge5:  [  5]  27.00-28.00  sec  1.85 MBytes  15.5 Mbits/sec  1340
+edge1:  [  5]  28.00-29.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  [  5]  28.00-29.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  [  5]  29.00-30.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  55.3 MBytes  15.5 Mbits/sec  0.000 ms  0/40070 (0%)  sender
+edge1:  [  5]   0.00-30.05  sec  55.3 MBytes  15.4 Mbits/sec  1.169 ms  0/40069 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge5:  [  5]  29.00-30.00  sec  1.86 MBytes  15.6 Mbits/sec  1350
+edge5:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge5:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge5:  [  5]   0.00-30.00  sec  55.2 MBytes  15.4 Mbits/sec  0.000 ms  0/39940 (0%)  sender
+edge5:  [  5]   0.00-30.09  sec  55.2 MBytes  15.4 Mbits/sec  1.912 ms  0/39938 (0%)  receiver
+edge5:
+edge5:  iperf Done.
+[1]+  Done                    iperf3 -u -c 10.0.0.1 -T edge1 -b0 -t 30s -i1 -p 5201
