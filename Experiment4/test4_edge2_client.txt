@@ -1,0 +1,1249 @@
+# Tawannnnnnnn :)
+# Experiment 4
+# Edge4 perspective (Client)
+# Cmd: iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1 & iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1 & iperf3 -u -c 192.168.2.10 -T superedge -p5210 -t 30s -b0 -i1
+
+[1] 1361
+[2] 1362
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  [  5] local 192.168.2.2 port 58584 connected to 192.168.2.10 port 5210
+edge3:  [  5] local 192.168.2.2 port 45344 connected to 192.168.2.3 port 5203
+edge1:  [  5] local 192.168.2.2 port 50119 connected to 192.168.2.1 port 5201
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec  1.04 MBytes  8.69 Mbits/sec  750
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   933 KBytes  7.64 Mbits/sec  660
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   764 KBytes  6.25 Mbits/sec  540
+superedge:  [  5]   1.00-2.00   sec   396 KBytes  3.24 Mbits/sec  280
+edge3:  [  5]   1.00-2.00   sec   382 KBytes  3.13 Mbits/sec  270
+edge1:  [  5]   1.00-2.00   sec   438 KBytes  3.59 Mbits/sec  310
+superedge:  [  5]   2.00-3.00   sec   467 KBytes  3.82 Mbits/sec  330
+edge3:  [  5]   2.00-3.00   sec   452 KBytes  3.71 Mbits/sec  320
+edge1:  [  5]   2.00-3.00   sec   495 KBytes  4.05 Mbits/sec  350
+superedge:  [  5]   3.00-4.00   sec   636 KBytes  5.21 Mbits/sec  450
+edge3:  [  5]   3.00-4.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   3.00-4.00   sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]   4.00-5.00   sec   580 KBytes  4.75 Mbits/sec  410
+edge3:  [  5]   4.00-5.00   sec   580 KBytes  4.75 Mbits/sec  410
+edge1:  [  5]   4.00-5.00   sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]   5.00-6.00   sec   424 KBytes  3.48 Mbits/sec  300
+edge3:  [  5]   5.00-6.00   sec   410 KBytes  3.36 Mbits/sec  290
+edge1:  [  5]   5.00-6.00   sec   382 KBytes  3.13 Mbits/sec  270
+superedge:  [  5]   6.00-7.00   sec   580 KBytes  4.75 Mbits/sec  410
+edge3:  [  5]   6.00-7.00   sec   594 KBytes  4.87 Mbits/sec  420
+edge1:  [  5]   6.00-7.00   sec   580 KBytes  4.75 Mbits/sec  410
+superedge:  [  5]   7.00-8.00   sec   467 KBytes  3.82 Mbits/sec  330
+edge3:  [  5]   7.00-8.00   sec   438 KBytes  3.59 Mbits/sec  310
+edge1:  [  5]   7.00-8.00   sec   467 KBytes  3.82 Mbits/sec  330
+superedge:  [  5]   8.00-9.00   sec   523 KBytes  4.29 Mbits/sec  370
+edge3:  [  5]   8.00-9.00   sec   551 KBytes  4.52 Mbits/sec  390
+edge1:  [  5]   8.00-9.00   sec   551 KBytes  4.52 Mbits/sec  390
+superedge:  [  5]   9.00-10.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  [  5]   9.00-10.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]  10.00-11.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  [  5]  10.00-11.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]  10.00-11.00  sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]  11.00-12.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  11.00-12.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  11.00-12.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  12.00-13.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  12.00-13.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  12.00-13.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  13.00-14.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  13.00-14.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge1:  [  5]  13.00-14.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  14.00-15.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  14.00-15.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  14.00-15.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]  15.00-16.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge3:  [  5]  15.00-16.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  15.00-16.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  16.00-17.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  16.00-17.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  16.00-17.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  17.00-18.00  sec   283 KBytes  2.32 Mbits/sec  200
+edge3:  [  5]  17.00-18.00  sec   283 KBytes  2.32 Mbits/sec  200
+edge1:  [  5]  17.00-18.00  sec   297 KBytes  2.43 Mbits/sec  210
+superedge:  [  5]  18.00-19.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [  5]  18.00-19.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge1:  [  5]  18.00-19.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  19.00-20.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge3:  [  5]  19.00-20.00  sec   566 KBytes  4.63 Mbits/sec  400
+edge1:  [  5]  19.00-20.00  sec   580 KBytes  4.75 Mbits/sec  410
+superedge:  [  5]  20.00-21.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge3:  [  5]  20.00-21.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge1:  [  5]  20.00-21.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  21.00-22.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge3:  [  5]  21.00-22.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  21.00-22.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  [  5]  22.00-23.00  sec   481 KBytes  3.94 Mbits/sec  340
+edge3:  [  5]  22.00-23.00  sec   481 KBytes  3.94 Mbits/sec  340
+edge1:  [  5]  22.00-23.00  sec   467 KBytes  3.82 Mbits/sec  330
+superedge:  [  5]  23.00-24.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  23.00-24.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  23.00-24.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  24.00-25.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge3:  [  5]  24.00-25.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge1:  [  5]  24.00-25.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  25.00-26.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]  25.00-26.00  sec   834 KBytes  6.84 Mbits/sec  590
+edge1:  [  5]  25.00-26.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  26.00-27.00  sec   622 KBytes  5.10 Mbits/sec  440
+edge3:  [  5]  26.00-27.00  sec   622 KBytes  5.10 Mbits/sec  440
+edge1:  [  5]  26.00-27.00  sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]  27.00-28.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  27.00-28.00  sec   764 KBytes  6.25 Mbits/sec  540
+edge1:  [  5]  27.00-28.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  28.00-29.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  28.00-29.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  28.00-29.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  29.00-30.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  19.9 MBytes  5.55 Mbits/sec  0.000 ms  0/14380 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  19.9 MBytes  5.55 Mbits/sec  2.852 ms  11/14380 (0.076%)  receiver
+superedge:
+superedge:  iperf Done.
+edge1:  [  5]  29.00-30.00  sec  1.09 MBytes  9.15 Mbits/sec  790
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  20.0 MBytes  5.60 Mbits/sec  0.000 ms  0/14500 (0%)  sender
+edge1:  [  5]   0.00-30.05  sec  20.0 MBytes  5.59 Mbits/sec  0.564 ms  0/14499 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge3:  [  5]  29.00-30.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  19.7 MBytes  5.52 Mbits/sec  0.000 ms  0/14290 (0%)  sender
+edge3:  [  5]   0.00-30.10  sec  19.7 MBytes  5.50 Mbits/sec  3.245 ms  0/14290 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+---------------------------------------------------------------------------------------
+
+[1] 1370
+[2] 1371
+edge1:  Connecting to host 192.168.2.1, port 5201
+edge3:  Connecting to host 192.168.2.3, port 5203
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge3:  [  5] local 192.168.2.2 port 56788 connected to 192.168.2.3 port 5203
+edge1:  [  5] local 192.168.2.2 port 45689 connected to 192.168.2.1 port 5201
+superedge:  [  5] local 192.168.2.2 port 49570 connected to 192.168.2.10 port 5210
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec  1.04 MBytes  8.69 Mbits/sec  750
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   877 KBytes  7.18 Mbits/sec  620
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]   1.00-2.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]   1.00-2.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   1.00-2.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]   2.00-3.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]   2.00-3.00   sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]   2.00-3.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]   3.00-4.00   sec   509 KBytes  4.17 Mbits/sec  360
+edge1:  [  5]   3.00-4.00   sec   537 KBytes  4.40 Mbits/sec  380
+superedge:  [  5]   3.00-4.00   sec   523 KBytes  4.29 Mbits/sec  370
+edge3:  [  5]   4.00-5.00   sec   665 KBytes  5.45 Mbits/sec  470
+edge1:  [  5]   4.00-5.00   sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]   4.00-5.00   sec   636 KBytes  5.21 Mbits/sec  450
+edge3:  [  5]   5.00-6.00   sec   749 KBytes  6.14 Mbits/sec  530
+edge1:  [  5]   5.00-6.00   sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]   5.00-6.00   sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]   6.00-7.00   sec   311 KBytes  2.55 Mbits/sec  220
+edge1:  [  5]   6.00-7.00   sec   311 KBytes  2.55 Mbits/sec  220
+superedge:  [  5]   6.00-7.00   sec   325 KBytes  2.66 Mbits/sec  230
+edge3:  [  5]   7.00-8.00   sec   608 KBytes  4.98 Mbits/sec  430
+edge1:  [  5]   7.00-8.00   sec   608 KBytes  4.98 Mbits/sec  430
+superedge:  [  5]   7.00-8.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge3:  [  5]   8.00-9.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]   8.00-9.00   sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]   8.00-9.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]   9.00-10.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   9.00-10.00  sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  10.00-11.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  10.00-11.00  sec   679 KBytes  5.55 Mbits/sec  480
+superedge:  [  5]  10.00-11.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  11.00-12.00  sec   806 KBytes  6.61 Mbits/sec  570
+superedge:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  12.00-13.00  sec   721 KBytes  5.90 Mbits/sec  510
+edge1:  [  5]  12.00-13.00  sec   721 KBytes  5.90 Mbits/sec  510
+superedge:  [  5]  12.00-13.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  13.00-14.00  sec   877 KBytes  7.19 Mbits/sec  620
+edge1:  [  5]  13.00-14.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  13.00-14.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge3:  [  5]  14.00-15.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge1:  [  5]  14.00-15.00  sec   566 KBytes  4.64 Mbits/sec  400
+superedge:  [  5]  14.00-15.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge3:  [  5]  15.00-16.00  sec   537 KBytes  4.40 Mbits/sec  380
+edge1:  [  5]  15.00-16.00  sec   537 KBytes  4.40 Mbits/sec  380
+superedge:  [  5]  15.00-16.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge3:  [  5]  16.00-17.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  16.00-17.00  sec   891 KBytes  7.30 Mbits/sec  630
+superedge:  [  5]  16.00-17.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge3:  [  5]  17.00-18.00  sec   594 KBytes  4.87 Mbits/sec  420
+edge1:  [  5]  17.00-18.00  sec   580 KBytes  4.73 Mbits/sec  410
+superedge:  [  5]  17.00-18.00  sec   551 KBytes  4.51 Mbits/sec  390
+edge3:  [  5]  18.00-19.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]  18.00-19.00  sec   707 KBytes  5.82 Mbits/sec  500
+superedge:  [  5]  18.00-19.00  sec   707 KBytes  5.81 Mbits/sec  500
+edge3:  [  5]  19.00-20.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  19.00-20.00  sec   891 KBytes  7.29 Mbits/sec  630
+superedge:  [  5]  19.00-20.00  sec   905 KBytes  7.40 Mbits/sec  640
+edge3:  [  5]  20.00-21.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  20.00-21.00  sec   679 KBytes  5.57 Mbits/sec  480
+superedge:  [  5]  20.00-21.00  sec   679 KBytes  5.57 Mbits/sec  480
+edge3:  [  5]  21.00-22.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge1:  [  5]  21.00-22.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  [  5]  21.00-22.00  sec   905 KBytes  7.42 Mbits/sec  640
+edge3:  [  5]  22.00-23.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  22.00-23.00  sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]  22.00-23.00  sec   735 KBytes  6.03 Mbits/sec  520
+edge3:  [  5]  23.00-24.00  sec   594 KBytes  4.87 Mbits/sec  420
+edge1:  [  5]  23.00-24.00  sec   580 KBytes  4.75 Mbits/sec  410
+superedge:  [  5]  23.00-24.00  sec   566 KBytes  4.63 Mbits/sec  400
+edge3:  [  5]  24.00-25.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  24.00-25.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  24.00-25.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  25.00-26.00  sec   693 KBytes  5.67 Mbits/sec  490
+edge1:  [  5]  25.00-26.00  sec   693 KBytes  5.65 Mbits/sec  490
+superedge:  [  5]  25.00-26.00  sec   707 KBytes  5.78 Mbits/sec  500
+edge3:  [  5]  26.00-27.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]  26.00-27.00  sec   693 KBytes  5.70 Mbits/sec  490
+superedge:  [  5]  26.00-27.00  sec   693 KBytes  5.69 Mbits/sec  490
+edge3:  [  5]  27.00-28.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  27.00-28.00  sec   891 KBytes  7.30 Mbits/sec  630
+superedge:  [  5]  27.00-28.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge3:  [  5]  28.00-29.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  28.00-29.00  sec   891 KBytes  7.30 Mbits/sec  630
+superedge:  [  5]  28.00-29.00  sec   905 KBytes  7.42 Mbits/sec  640
+superedge:  [  5]  29.00-30.00  sec   806 KBytes  6.58 Mbits/sec  570
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  20.9 MBytes  5.83 Mbits/sec  0.000 ms  0/15110 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  20.9 MBytes  5.83 Mbits/sec  2.422 ms  0/15109 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+edge3:  [  5]  29.00-30.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  21.1 MBytes  5.90 Mbits/sec  0.000 ms  0/15290 (0%)  sender
+edge3:  [  5]   0.00-30.11  sec  21.1 MBytes  5.88 Mbits/sec  2.050 ms  0/15287 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+pi@edge2:~ $ edge1:  [  5]  29.00-30.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  20.9 MBytes  5.85 Mbits/sec  0.000 ms  0/15140 (0%)  sender
+edge1:  [  5]   0.00-30.09  sec  20.9 MBytes  5.83 Mbits/sec  2.042 ms  0/15139 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+----------------------------------------------------------------------------------------
+
+[1] 1374
+[2] 1375
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge1:  [  5] local 192.168.2.2 port 44220 connected to 192.168.2.1 port 5201
+edge3:  [  5] local 192.168.2.2 port 60665 connected to 192.168.2.3 port 5203
+superedge:  [  5] local 192.168.2.2 port 47618 connected to 192.168.2.10 port 5210
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]   1.00-2.00   sec   608 KBytes  4.98 Mbits/sec  430
+edge3:  [  5]   1.00-2.00   sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]   1.00-2.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge1:  [  5]   2.00-3.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge3:  [  5]   2.00-3.00   sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]   2.00-3.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge1:  [  5]   3.00-4.00   sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]   3.00-4.00   sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]   3.00-4.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   4.00-5.00   sec   438 KBytes  3.59 Mbits/sec  310
+edge3:  [  5]   4.00-5.00   sec   467 KBytes  3.82 Mbits/sec  330
+superedge:  [  5]   4.00-5.00   sec   467 KBytes  3.82 Mbits/sec  330
+edge1:  [  5]   5.00-6.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge3:  [  5]   5.00-6.00   sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]   5.00-6.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]   6.00-7.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]   6.00-7.00   sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]   6.00-7.00   sec   749 KBytes  6.14 Mbits/sec  530
+edge1:  [  5]   7.00-8.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge3:  [  5]   7.00-8.00   sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]   7.00-8.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge1:  [  5]   8.00-9.00   sec   764 KBytes  6.26 Mbits/sec  540
+edge3:  [  5]   8.00-9.00   sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]   8.00-9.00   sec   764 KBytes  6.26 Mbits/sec  540
+edge1:  [  5]   9.00-10.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  10.00-11.00  sec   947 KBytes  7.76 Mbits/sec  670
+edge3:  [  5]  10.00-11.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  [  5]  10.00-11.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  11.00-12.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]  11.00-12.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  11.00-12.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  12.00-13.00  sec   636 KBytes  5.21 Mbits/sec  450
+edge3:  [  5]  12.00-13.00  sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]  12.00-13.00  sec   608 KBytes  4.98 Mbits/sec  430
+edge1:  [  5]  13.00-14.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  13.00-14.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  13.00-14.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  14.00-15.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  14.00-15.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  14.00-15.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]  15.00-16.00  sec   481 KBytes  3.94 Mbits/sec  340
+edge3:  [  5]  15.00-16.00  sec   481 KBytes  3.94 Mbits/sec  340
+superedge:  [  5]  15.00-16.00  sec   523 KBytes  4.29 Mbits/sec  370
+edge1:  [  5]  16.00-17.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  16.00-17.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  16.00-17.00  sec   650 KBytes  5.33 Mbits/sec  460
+edge1:  [  5]  17.00-18.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  17.00-18.00  sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]  17.00-18.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  18.00-19.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  18.00-19.00  sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]  18.00-19.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  19.00-20.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]  19.00-20.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  19.00-20.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  20.00-21.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  20.00-21.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  20.00-21.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  21.00-22.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge3:  [  5]  21.00-22.00  sec   905 KBytes  7.41 Mbits/sec  640
+superedge:  [  5]  21.00-22.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  22.00-23.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge3:  [  5]  22.00-23.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  22.00-23.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  23.00-24.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]  23.00-24.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]  23.00-24.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  24.00-25.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]  24.00-25.00  sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]  24.00-25.00  sec   622 KBytes  5.10 Mbits/sec  440
+edge1:  [  5]  25.00-26.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  25.00-26.00  sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]  25.00-26.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  26.00-27.00  sec  1.01 MBytes  8.46 Mbits/sec  730
+edge3:  [  5]  26.00-27.00  sec  1.01 MBytes  8.46 Mbits/sec  730
+superedge:  [  5]  26.00-27.00  sec   976 KBytes  7.99 Mbits/sec  690
+edge1:  [  5]  27.00-28.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge3:  [  5]  27.00-28.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  27.00-28.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  28.00-29.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge3:  [  5]  28.00-29.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  28.00-29.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  29.00-30.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  21.3 MBytes  5.97 Mbits/sec  0.000 ms  0/15450 (0%)  sender
+edge1:  [  5]   0.00-30.10  sec  21.3 MBytes  5.95 Mbits/sec  2.192 ms  0/15450 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge3:  [  5]  29.00-30.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  21.4 MBytes  5.99 Mbits/sec  0.000 ms  0/15510 (0%)  sender
+edge3:  [  5]   0.00-30.17  sec  21.4 MBytes  5.95 Mbits/sec  4.104 ms  0/15510 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+superedge:  [  5]  29.00-30.00  sec  1.48 MBytes  12.4 Mbits/sec  1070
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  21.9 MBytes  6.13 Mbits/sec  0.000 ms  0/15870 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  21.9 MBytes  6.13 Mbits/sec  0.391 ms  0/15866 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+--------------------------------------------------------------------------------------------
+
+[1] 1377
+[2] 1378
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  [  5] local 192.168.2.2 port 52739 connected to 192.168.2.10 port 5210
+edge3:  [  5] local 192.168.2.2 port 34617 connected to 192.168.2.3 port 5203
+edge1:  [  5] local 192.168.2.2 port 43831 connected to 192.168.2.1 port 5201
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  [  5]   1.00-2.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  [  5]   1.00-2.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   1.00-2.00   sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  [  5]   2.00-3.00   sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]   2.00-3.00   sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]   2.00-3.00   sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]   3.00-4.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]   3.00-4.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   3.00-4.00   sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]   4.00-5.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]   4.00-5.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]   4.00-5.00   sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  [  5]   5.00-6.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   5.00-6.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   5.00-6.00   sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]   6.00-7.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]   6.00-7.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   6.00-7.00   sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]   7.00-8.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   7.00-8.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]   7.00-8.00   sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]   8.00-9.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]   8.00-9.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   8.00-9.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]  10.00-11.00  sec   622 KBytes  5.10 Mbits/sec  440
+edge3:  [  5]  10.00-11.00  sec   636 KBytes  5.21 Mbits/sec  450
+edge1:  [  5]  10.00-11.00  sec   608 KBytes  4.98 Mbits/sec  430
+superedge:  [  5]  11.00-12.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]  11.00-12.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  11.00-12.00  sec   834 KBytes  6.83 Mbits/sec  590
+superedge:  [  5]  12.00-13.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge3:  [  5]  12.00-13.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge1:  [  5]  12.00-13.00  sec   580 KBytes  4.75 Mbits/sec  410
+superedge:  [  5]  13.00-14.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]  13.00-14.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  13.00-14.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]  14.00-15.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge3:  [  5]  14.00-15.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge1:  [  5]  14.00-15.00  sec   877 KBytes  7.18 Mbits/sec  620
+superedge:  [  5]  15.00-16.00  sec   650 KBytes  5.33 Mbits/sec  460
+edge3:  [  5]  15.00-16.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]  15.00-16.00  sec   650 KBytes  5.33 Mbits/sec  460
+superedge:  [  5]  16.00-17.00  sec   580 KBytes  4.75 Mbits/sec  410
+edge3:  [  5]  16.00-17.00  sec   566 KBytes  4.63 Mbits/sec  400
+edge1:  [  5]  16.00-17.00  sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]  17.00-18.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  17.00-18.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  17.00-18.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  18.00-19.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]  18.00-19.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  18.00-19.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  19.00-20.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]  19.00-20.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  19.00-20.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  20.00-21.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  20.00-21.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge1:  [  5]  20.00-21.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  21.00-22.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]  21.00-22.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  21.00-22.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  22.00-23.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  22.00-23.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  22.00-23.00  sec   834 KBytes  6.83 Mbits/sec  590
+superedge:  [  5]  23.00-24.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge3:  [  5]  23.00-24.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge1:  [  5]  23.00-24.00  sec   509 KBytes  4.17 Mbits/sec  360
+superedge:  [  5]  24.00-25.00  sec   551 KBytes  4.52 Mbits/sec  390
+edge3:  [  5]  24.00-25.00  sec   580 KBytes  4.75 Mbits/sec  410
+edge1:  [  5]  24.00-25.00  sec   608 KBytes  4.98 Mbits/sec  430
+superedge:  [  5]  25.00-26.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge3:  [  5]  25.00-26.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  25.00-26.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  [  5]  26.00-27.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  26.00-27.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  26.00-27.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  27.00-28.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  27.00-28.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge1:  [  5]  27.00-28.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  28.00-29.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge3:  [  5]  28.00-29.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge1:  [  5]  28.00-29.00  sec   905 KBytes  7.41 Mbits/sec  640
+superedge:  [  5]  29.00-30.00  sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  21.5 MBytes  6.02 Mbits/sec  0.000 ms  0/15580 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  21.5 MBytes  6.01 Mbits/sec  1.817 ms  0/15577 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+pi@edge2:~ $ edge3:  [  5]  29.00-30.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  21.4 MBytes  5.99 Mbits/sec  0.000 ms  0/15510 (0%)  sender
+edge3:  [  5]   0.00-30.11  sec  21.4 MBytes  5.97 Mbits/sec  1.930 ms  0/15510 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+edge1:  [  5]  29.00-30.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  21.5 MBytes  6.00 Mbits/sec  0.000 ms  0/15550 (0%)  sender
+edge1:  [  5]   0.00-30.05  sec  21.5 MBytes  5.99 Mbits/sec  0.709 ms  0/15546 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+-------------------------------------------------------------------------------------------------
+
+[1] 1381
+[2] 1382
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge1:  [  5] local 192.168.2.2 port 49092 connected to 192.168.2.1 port 5201
+superedge:  [  5] local 192.168.2.2 port 51587 connected to 192.168.2.10 port 5210
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge3:  [  5] local 192.168.2.2 port 50821 connected to 192.168.2.3 port 5203
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   905 KBytes  7.41 Mbits/sec  640
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   608 KBytes  4.98 Mbits/sec  430
+edge1:  [  5]   1.00-2.00   sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  [  5]   1.00-2.00   sec   636 KBytes  5.21 Mbits/sec  450
+edge3:  [  5]   1.00-2.00   sec   636 KBytes  5.21 Mbits/sec  450
+edge1:  [  5]   2.00-3.00   sec   495 KBytes  4.05 Mbits/sec  350
+superedge:  [  5]   2.00-3.00   sec   495 KBytes  4.05 Mbits/sec  350
+edge3:  [  5]   2.00-3.00   sec   424 KBytes  3.48 Mbits/sec  300
+edge1:  [  5]   3.00-4.00   sec   438 KBytes  3.59 Mbits/sec  310
+superedge:  [  5]   3.00-4.00   sec   467 KBytes  3.82 Mbits/sec  330
+edge3:  [  5]   3.00-4.00   sec   608 KBytes  4.98 Mbits/sec  430
+edge1:  [  5]   4.00-5.00   sec   594 KBytes  4.87 Mbits/sec  420
+superedge:  [  5]   4.00-5.00   sec   580 KBytes  4.75 Mbits/sec  410
+edge3:  [  5]   4.00-5.00   sec   566 KBytes  4.63 Mbits/sec  400
+edge1:  [  5]   5.00-6.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   5.00-6.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   5.00-6.00   sec   481 KBytes  3.94 Mbits/sec  340
+edge1:  [  5]   6.00-7.00   sec   339 KBytes  2.78 Mbits/sec  240
+superedge:  [  5]   6.00-7.00   sec   311 KBytes  2.55 Mbits/sec  220
+edge3:  [  5]   6.00-7.00   sec   438 KBytes  3.59 Mbits/sec  310
+edge1:  [  5]   7.00-8.00   sec   608 KBytes  4.98 Mbits/sec  430
+superedge:  [  5]   7.00-8.00   sec   622 KBytes  5.08 Mbits/sec  440
+edge3:  [  5]   7.00-8.00   sec   764 KBytes  6.26 Mbits/sec  540
+edge1:  [  5]   8.00-9.00   sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]   8.00-9.00   sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]   8.00-9.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   9.00-10.00  sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]   9.00-10.00  sec   622 KBytes  5.11 Mbits/sec  440
+edge3:  [  5]   9.00-10.00  sec   580 KBytes  4.75 Mbits/sec  410
+edge1:  [  5]  10.00-11.00  sec   608 KBytes  4.98 Mbits/sec  430
+superedge:  [  5]  10.00-11.00  sec   636 KBytes  5.21 Mbits/sec  450
+edge3:  [  5]  10.00-11.00  sec   594 KBytes  4.87 Mbits/sec  420
+edge1:  [  5]  11.00-12.00  sec   537 KBytes  4.40 Mbits/sec  380
+superedge:  [  5]  11.00-12.00  sec   523 KBytes  4.29 Mbits/sec  370
+edge3:  [  5]  11.00-12.00  sec   608 KBytes  4.98 Mbits/sec  430
+edge1:  [  5]  12.00-13.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  12.00-13.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  12.00-13.00  sec   636 KBytes  5.21 Mbits/sec  450
+edge1:  [  5]  13.00-14.00  sec   452 KBytes  3.71 Mbits/sec  320
+superedge:  [  5]  13.00-14.00  sec   481 KBytes  3.94 Mbits/sec  340
+edge3:  [  5]  13.00-14.00  sec   467 KBytes  3.82 Mbits/sec  330
+edge1:  [  5]  14.00-15.00  sec   594 KBytes  4.86 Mbits/sec  420
+superedge:  [  5]  14.00-15.00  sec   594 KBytes  4.85 Mbits/sec  420
+edge3:  [  5]  14.00-15.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  15.00-16.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  15.00-16.00  sec   848 KBytes  6.94 Mbits/sec  600
+edge3:  [  5]  15.00-16.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]  16.00-17.00  sec   537 KBytes  4.40 Mbits/sec  380
+superedge:  [  5]  16.00-17.00  sec   523 KBytes  4.30 Mbits/sec  370
+edge3:  [  5]  16.00-17.00  sec   594 KBytes  4.87 Mbits/sec  420
+edge1:  [  5]  17.00-18.00  sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]  17.00-18.00  sec   650 KBytes  5.34 Mbits/sec  460
+edge3:  [  5]  17.00-18.00  sec   650 KBytes  5.33 Mbits/sec  460
+edge1:  [  5]  18.00-19.00  sec   764 KBytes  6.25 Mbits/sec  540
+superedge:  [  5]  18.00-19.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  18.00-19.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  19.00-20.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  19.00-20.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  19.00-20.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge1:  [  5]  20.00-21.00  sec   933 KBytes  7.65 Mbits/sec  660
+superedge:  [  5]  20.00-21.00  sec   933 KBytes  7.63 Mbits/sec  660
+edge3:  [  5]  20.00-21.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge1:  [  5]  21.00-22.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  21.00-22.00  sec   778 KBytes  6.38 Mbits/sec  550
+edge3:  [  5]  21.00-22.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  22.00-23.00  sec   891 KBytes  7.30 Mbits/sec  630
+superedge:  [  5]  22.00-23.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge3:  [  5]  22.00-23.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  23.00-24.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  23.00-24.00  sec   778 KBytes  6.35 Mbits/sec  550
+edge3:  [  5]  23.00-24.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge1:  [  5]  24.00-25.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  [  5]  24.00-25.00  sec   919 KBytes  7.56 Mbits/sec  650
+edge3:  [  5]  24.00-25.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  25.00-26.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  25.00-26.00  sec   792 KBytes  6.48 Mbits/sec  560
+edge3:  [  5]  25.00-26.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  26.00-27.00  sec   650 KBytes  5.33 Mbits/sec  460
+superedge:  [  5]  26.00-27.00  sec   636 KBytes  5.22 Mbits/sec  450
+edge3:  [  5]  26.00-27.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge1:  [  5]  27.00-28.00  sec   933 KBytes  7.64 Mbits/sec  660
+superedge:  [  5]  27.00-28.00  sec   962 KBytes  7.88 Mbits/sec  680
+edge3:  [  5]  27.00-28.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  28.00-29.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  28.00-29.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  28.00-29.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  29.00-30.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  20.4 MBytes  5.70 Mbits/sec  0.000 ms  0/14750 (0%)  sender
+edge1:  [  5]   0.00-30.10  sec  20.4 MBytes  5.68 Mbits/sec  1.924 ms  0/14747 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+superedge:  [  5]  29.00-30.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  20.3 MBytes  5.67 Mbits/sec  0.000 ms  0/14680 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  20.3 MBytes  5.67 Mbits/sec  2.729 ms  0/14680 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+pi@edge2:~ $ edge3:  [  5]  29.00-30.00  sec  1.95 MBytes  16.3 Mbits/sec  1410
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  21.3 MBytes  5.97 Mbits/sec  0.000 ms  0/15460 (0%)  sender
+edge3:  [  5]   0.00-30.05  sec  21.3 MBytes  5.96 Mbits/sec  0.585 ms  0/15459 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+----------------------------------------------------------------------------------------------
+
+[1] 1400
+[2] 1401
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge3:  [  5] local 192.168.2.2 port 53867 connected to 192.168.2.3 port 5203
+edge1:  [  5] local 192.168.2.2 port 52433 connected to 192.168.2.1 port 5201
+superedge:  [  5] local 192.168.2.2 port 36051 connected to 192.168.2.10 port 5210
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   396 KBytes  3.24 Mbits/sec  280
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]   1.00-2.00   sec   848 KBytes  6.95 Mbits/sec  600
+edge1:  [  5]   1.00-2.00   sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]   1.00-2.00   sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [  5]   2.00-3.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   2.00-3.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   2.00-3.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   3.00-4.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]   3.00-4.00   sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]   3.00-4.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   4.00-5.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   4.00-5.00   sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  [  5]   4.00-5.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge3:  [  5]   5.00-6.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   5.00-6.00   sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]   5.00-6.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   6.00-7.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]   6.00-7.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   6.00-7.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]   7.00-8.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]   7.00-8.00   sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]   7.00-8.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge3:  [  5]   8.00-9.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]   8.00-9.00   sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]   8.00-9.00   sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]   9.00-10.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]   9.00-10.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]   9.00-10.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]  10.00-11.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  10.00-11.00  sec   905 KBytes  7.41 Mbits/sec  640
+superedge:  [  5]  10.00-11.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge3:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  12.00-13.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  12.00-13.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  12.00-13.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]  13.00-14.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  13.00-14.00  sec   877 KBytes  7.18 Mbits/sec  620
+superedge:  [  5]  13.00-14.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge3:  [  5]  14.00-15.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  14.00-15.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  14.00-15.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  15.00-16.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge1:  [  5]  15.00-16.00  sec   877 KBytes  7.18 Mbits/sec  620
+superedge:  [  5]  15.00-16.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [  5]  16.00-17.00  sec   636 KBytes  5.21 Mbits/sec  450
+edge1:  [  5]  16.00-17.00  sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]  16.00-17.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  17.00-18.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  17.00-18.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  17.00-18.00  sec   735 KBytes  6.03 Mbits/sec  520
+edge3:  [  5]  18.00-19.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge1:  [  5]  18.00-19.00  sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]  18.00-19.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  19.00-20.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  19.00-20.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  19.00-20.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]  20.00-21.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  20.00-21.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  20.00-21.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  21.00-22.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  21.00-22.00  sec   905 KBytes  7.41 Mbits/sec  640
+superedge:  [  5]  21.00-22.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge3:  [  5]  22.00-23.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]  22.00-23.00  sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]  22.00-23.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  23.00-24.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge1:  [  5]  23.00-24.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  23.00-24.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  24.00-25.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge1:  [  5]  24.00-25.00  sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]  24.00-25.00  sec   834 KBytes  6.84 Mbits/sec  590
+edge3:  [  5]  25.00-26.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge1:  [  5]  25.00-26.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  25.00-26.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  26.00-27.00  sec   452 KBytes  3.71 Mbits/sec  320
+edge1:  [  5]  26.00-27.00  sec   452 KBytes  3.71 Mbits/sec  320
+superedge:  [  5]  26.00-27.00  sec   509 KBytes  4.17 Mbits/sec  360
+edge3:  [  5]  27.00-28.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  27.00-28.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  27.00-28.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  28.00-29.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  28.00-29.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  28.00-29.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  29.00-30.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  21.7 MBytes  6.07 Mbits/sec  0.000 ms  0/15720 (0%)  sender
+edge3:  [  5]   0.00-30.08  sec  21.7 MBytes  6.05 Mbits/sec  2.500 ms  0/15718 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+superedge:  [  5]  29.00-30.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  22.1 MBytes  6.17 Mbits/sec  0.000 ms  0/15980 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  22.1 MBytes  6.17 Mbits/sec  1.299 ms  0/15979 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+edge1:  [  5]  29.00-30.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  22.1 MBytes  6.19 Mbits/sec  0.000 ms  0/16040 (0%)  sender
+edge1:  [  5]   0.00-30.10  sec  22.1 MBytes  6.17 Mbits/sec  2.192 ms  0/16039 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+-------------------------------------------------------------------------------------------------
+
+[1] 1410
+[2] 1411
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  Connecting to host 192.168.2.10, port 5210
+superedge:  [  5] local 192.168.2.2 port 52415 connected to 192.168.2.10 port 5210
+edge1:  [  5] local 192.168.2.2 port 34785 connected to 192.168.2.1 port 5201
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge3:  [  5] local 192.168.2.2 port 57066 connected to 192.168.2.3 port 5203
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   976 KBytes  7.99 Mbits/sec  690
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec  1018 KBytes  8.34 Mbits/sec  720
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]   1.00-2.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]   1.00-2.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]   1.00-2.00   sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]   2.00-3.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]   2.00-3.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]   2.00-3.00   sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]   3.00-4.00   sec   764 KBytes  6.25 Mbits/sec  540
+edge1:  [  5]   3.00-4.00   sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]   3.00-4.00   sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]   4.00-5.00   sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]   4.00-5.00   sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]   4.00-5.00   sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]   5.00-6.00   sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]   5.00-6.00   sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]   5.00-6.00   sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]   6.00-7.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]   6.00-7.00   sec   693 KBytes  5.67 Mbits/sec  490
+edge3:  [  5]   6.00-7.00   sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]   7.00-8.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge1:  [  5]   7.00-8.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge3:  [  5]   7.00-8.00   sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]   8.00-9.00   sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]   8.00-9.00   sec   919 KBytes  7.53 Mbits/sec  650
+edge3:  [  5]   8.00-9.00   sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]   9.00-10.00  sec   665 KBytes  5.45 Mbits/sec  470
+edge1:  [  5]   9.00-10.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]   9.00-10.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  10.00-11.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge1:  [  5]  10.00-11.01  sec   933 KBytes  7.60 Mbits/sec  660
+edge3:  [  5]  10.00-11.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  11.01-12.00  sec   820 KBytes  6.76 Mbits/sec  580
+edge3:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  12.00-13.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  12.00-13.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  [  5]  12.00-13.00  sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]  13.00-14.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  13.00-14.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  13.00-14.00  sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]  14.00-15.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  14.00-15.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  14.00-15.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  15.00-16.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  15.00-16.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge3:  [  5]  15.00-16.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  16.00-17.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  16.00-17.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  16.00-17.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  17.00-18.00  sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]  17.00-18.00  sec   636 KBytes  5.21 Mbits/sec  450
+edge3:  [  5]  17.00-18.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  18.00-19.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  18.00-19.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge3:  [  5]  18.00-19.00  sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]  19.00-20.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  19.00-20.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  19.00-20.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  20.00-21.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  20.00-21.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  20.00-21.00  sec   650 KBytes  5.33 Mbits/sec  460
+superedge:  [  5]  21.00-22.00  sec   537 KBytes  4.40 Mbits/sec  380
+edge1:  [  5]  21.00-22.01  sec   537 KBytes  4.38 Mbits/sec  380
+edge3:  [  5]  21.00-22.00  sec   650 KBytes  5.33 Mbits/sec  460
+superedge:  [  5]  22.00-23.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  22.01-23.00  sec   877 KBytes  7.22 Mbits/sec  620
+edge3:  [  5]  22.00-23.00  sec   947 KBytes  7.76 Mbits/sec  670
+superedge:  [  5]  23.00-24.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge1:  [  5]  23.00-24.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge3:  [  5]  23.00-24.00  sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]  24.00-25.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  24.00-25.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge3:  [  5]  24.00-25.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  25.00-26.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  25.00-26.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]  25.00-26.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  26.00-27.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge1:  [  5]  26.00-27.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge3:  [  5]  26.00-27.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  [  5]  27.00-28.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  27.00-28.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge3:  [  5]  27.00-28.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  28.00-29.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge1:  [  5]  28.00-29.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge3:  [  5]  28.00-29.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  29.00-30.00  sec   764 KBytes  6.25 Mbits/sec  540
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  23.0 MBytes  6.44 Mbits/sec  0.000 ms  0/16690 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  23.0 MBytes  6.44 Mbits/sec  3.357 ms  0/16687 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+pi@edge2:~ $ edge1:  [  5]  29.00-30.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  23.1 MBytes  6.46 Mbits/sec  0.000 ms  0/16730 (0%)  sender
+edge1:  [  5]   0.00-30.17  sec  23.1 MBytes  6.42 Mbits/sec  2.243 ms  0/16730 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge3:  [  5]  29.00-30.00  sec  1.27 MBytes  10.7 Mbits/sec  920
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  23.5 MBytes  6.57 Mbits/sec  0.000 ms  0/17010 (0%)  sender
+edge3:  [  5]   0.00-30.04  sec  23.5 MBytes  6.56 Mbits/sec  0.521 ms  0/17010 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+------------------------------------------------------------------------------------------------
+
+[1] 1415
+[2] 1416
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge1:  [  5] local 192.168.2.2 port 56594 connected to 192.168.2.1 port 5201
+superedge:  [  5] local 192.168.2.2 port 58342 connected to 192.168.2.10 port 5210
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge3:  [  5] local 192.168.2.2 port 38330 connected to 192.168.2.3 port 5203
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   1.00-2.00   sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]   1.00-2.00   sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]   1.00-2.00   sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]   2.00-3.00   sec   622 KBytes  5.10 Mbits/sec  440
+superedge:  [  5]   2.00-3.00   sec   636 KBytes  5.21 Mbits/sec  450
+edge3:  [  5]   2.00-3.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   3.00-4.00   sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]   3.00-4.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge3:  [  5]   3.00-4.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   4.00-5.00   sec  1004 KBytes  8.22 Mbits/sec  710
+superedge:  [  5]   4.00-5.00   sec  1.01 MBytes  8.46 Mbits/sec  730
+edge3:  [  5]   4.00-5.00   sec   962 KBytes  7.88 Mbits/sec  680
+edge1:  [  5]   5.00-6.00   sec   481 KBytes  3.94 Mbits/sec  340
+superedge:  [  5]   5.00-6.00   sec   481 KBytes  3.94 Mbits/sec  340
+edge3:  [  5]   5.00-6.00   sec   594 KBytes  4.87 Mbits/sec  420
+edge1:  [  5]   6.00-7.00   sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]   6.00-7.00   sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]   6.00-7.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]   7.00-8.00   sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]   7.00-8.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]   7.00-8.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]   8.00-9.00   sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]   8.00-9.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]   8.00-9.00   sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]   9.00-10.00  sec  1004 KBytes  8.22 Mbits/sec  710
+superedge:  [  5]   9.00-10.00  sec   990 KBytes  8.11 Mbits/sec  700
+edge3:  [  5]   9.00-10.00  sec   947 KBytes  7.76 Mbits/sec  670
+edge1:  [  5]  10.00-11.00  sec   396 KBytes  3.24 Mbits/sec  280
+superedge:  [  5]  10.00-11.00  sec   410 KBytes  3.36 Mbits/sec  290
+edge3:  [  5]  10.00-11.00  sec   396 KBytes  3.24 Mbits/sec  280
+edge1:  [  5]  11.00-12.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  11.00-12.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  11.00-12.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  12.00-13.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  12.00-13.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  12.00-13.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  13.00-14.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  13.00-14.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [  5]  13.00-14.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge1:  [  5]  14.00-15.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  14.00-15.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  14.00-15.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  15.00-16.00  sec   877 KBytes  7.18 Mbits/sec  620
+superedge:  [  5]  15.00-16.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [  5]  15.00-16.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  16.00-17.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  16.00-17.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  16.00-17.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  17.00-18.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]  17.00-18.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  17.00-18.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  18.00-19.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  18.00-19.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  18.00-19.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  19.00-20.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  19.00-20.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  19.00-20.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  20.00-21.00  sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]  20.00-21.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  20.00-21.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  21.00-22.00  sec   933 KBytes  7.65 Mbits/sec  660
+superedge:  [  5]  21.00-22.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge3:  [  5]  21.00-22.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  22.00-23.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  22.00-23.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]  22.00-23.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  23.00-24.00  sec   990 KBytes  8.11 Mbits/sec  700
+superedge:  [  5]  23.00-24.00  sec  1004 KBytes  8.22 Mbits/sec  710
+edge3:  [  5]  23.00-24.00  sec  1.04 MBytes  8.69 Mbits/sec  750
+edge1:  [  5]  24.00-25.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  24.00-25.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  24.00-25.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]  25.00-26.00  sec   891 KBytes  7.30 Mbits/sec  630
+superedge:  [  5]  25.00-26.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge3:  [  5]  25.00-26.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  26.00-27.00  sec   594 KBytes  4.87 Mbits/sec  420
+superedge:  [  5]  26.00-27.00  sec   594 KBytes  4.87 Mbits/sec  420
+edge3:  [  5]  26.00-27.00  sec   608 KBytes  4.98 Mbits/sec  430
+edge1:  [  5]  27.00-28.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  27.00-28.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge3:  [  5]  27.00-28.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge1:  [  5]  28.00-29.00  sec   834 KBytes  6.83 Mbits/sec  590
+superedge:  [  5]  28.00-29.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [  5]  28.00-29.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  29.00-30.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  22.6 MBytes  6.32 Mbits/sec  0.000 ms  0/16360 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  22.6 MBytes  6.32 Mbits/sec  1.852 ms  0/16356 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+pi@edge2:~ $ edge1:  [  5]  29.00-30.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  22.6 MBytes  6.33 Mbits/sec  0.000 ms  0/16400 (0%)  sender
+edge1:  [  5]   0.00-30.19  sec  22.6 MBytes  6.29 Mbits/sec  3.303 ms  0/16400 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge3:  [  5]  29.00-30.00  sec   990 KBytes  8.11 Mbits/sec  700
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  22.7 MBytes  6.36 Mbits/sec  0.000 ms  0/16460 (0%)  sender
+edge3:  [  5]   0.00-30.05  sec  22.7 MBytes  6.34 Mbits/sec  0.830 ms  0/16458 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+-----------------------------------------------------------------------------------------
+
+[1] 1419
+[2] 1420
+edge1:  Connecting to host 192.168.2.1, port 5201
+edge3:  Connecting to host 192.168.2.3, port 5203
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge1:  [  5] local 192.168.2.2 port 60344 connected to 192.168.2.1 port 5201
+edge3:  [  5] local 192.168.2.2 port 47906 connected to 192.168.2.3 port 5203
+superedge:  [  5] local 192.168.2.2 port 56328 connected to 192.168.2.10 port 5210
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   594 KBytes  4.86 Mbits/sec  420
+edge1:  [  5]   1.00-2.00   sec   467 KBytes  3.82 Mbits/sec  330
+edge3:  [  5]   1.00-2.00   sec   452 KBytes  3.71 Mbits/sec  320
+superedge:  [  5]   1.00-2.00   sec   523 KBytes  4.29 Mbits/sec  370
+edge1:  [  5]   2.00-3.00   sec   523 KBytes  4.29 Mbits/sec  370
+edge3:  [  5]   2.00-3.00   sec   523 KBytes  4.29 Mbits/sec  370
+superedge:  [  5]   2.00-3.00   sec   495 KBytes  4.05 Mbits/sec  350
+edge1:  [  5]   3.00-4.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge3:  [  5]   3.00-4.00   sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]   3.00-4.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   4.00-5.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]   4.00-5.00   sec   679 KBytes  5.54 Mbits/sec  480
+superedge:  [  5]   4.00-5.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]   5.00-6.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]   5.00-6.00   sec   721 KBytes  5.93 Mbits/sec  510
+superedge:  [  5]   5.00-6.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]   6.00-7.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge3:  [  5]   6.00-7.00   sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  [  5]   6.00-7.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]   7.00-8.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   7.00-8.00   sec   707 KBytes  5.77 Mbits/sec  500
+superedge:  [  5]   7.00-8.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]   8.00-9.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]   8.00-9.00   sec   665 KBytes  5.47 Mbits/sec  470
+superedge:  [  5]   8.00-9.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   9.00-10.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]   9.00-10.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]   9.00-10.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  10.00-11.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge3:  [  5]  10.00-11.00  sec   947 KBytes  7.73 Mbits/sec  670
+superedge:  [  5]  10.00-11.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge1:  [  5]  11.00-12.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  11.00-12.00  sec   707 KBytes  5.82 Mbits/sec  500
+superedge:  [  5]  11.00-12.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  12.00-13.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge3:  [  5]  12.00-13.00  sec   891 KBytes  7.30 Mbits/sec  630
+superedge:  [  5]  12.00-13.00  sec   877 KBytes  7.18 Mbits/sec  620
+edge1:  [  5]  13.00-14.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  13.00-14.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  13.00-14.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  14.00-15.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  14.00-15.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  14.00-15.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  15.00-16.00  sec   962 KBytes  7.88 Mbits/sec  680
+edge3:  [  5]  15.00-16.00  sec   976 KBytes  7.99 Mbits/sec  690
+superedge:  [  5]  15.00-16.00  sec   962 KBytes  7.88 Mbits/sec  680
+edge1:  [  5]  16.00-17.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  16.00-17.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  [  5]  16.00-17.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  17.00-18.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  17.00-18.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  17.00-18.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  18.00-19.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  18.00-19.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  18.00-19.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge1:  [  5]  19.00-20.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge3:  [  5]  19.00-20.00  sec   933 KBytes  7.65 Mbits/sec  660
+superedge:  [  5]  19.00-20.00  sec   933 KBytes  7.65 Mbits/sec  660
+edge1:  [  5]  20.00-21.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  20.00-21.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  20.00-21.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge1:  [  5]  21.00-22.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  21.00-22.00  sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]  21.00-22.00  sec   806 KBytes  6.60 Mbits/sec  570
+edge1:  [  5]  22.00-23.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  22.00-23.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  22.00-23.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  23.00-24.00  sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]  23.00-24.00  sec   721 KBytes  5.91 Mbits/sec  510
+superedge:  [  5]  23.00-24.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]  24.00-25.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  24.00-25.00  sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]  24.00-25.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  25.00-26.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge3:  [  5]  25.00-26.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  25.00-26.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge1:  [  5]  26.00-27.00  sec   947 KBytes  7.77 Mbits/sec  670
+edge3:  [  5]  26.00-27.00  sec   933 KBytes  7.65 Mbits/sec  660
+superedge:  [  5]  26.00-27.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  27.00-28.00  sec  1004 KBytes  8.22 Mbits/sec  710
+edge3:  [  5]  27.00-28.00  sec  1018 KBytes  8.34 Mbits/sec  720
+superedge:  [  5]  27.00-28.00  sec   976 KBytes  7.99 Mbits/sec  690
+edge1:  [  5]  28.00-29.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge3:  [  5]  28.00-29.00  sec   863 KBytes  7.07 Mbits/sec  610
+superedge:  [  5]  28.00-29.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  29.00-30.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  22.5 MBytes  6.30 Mbits/sec  0.000 ms  0/16320 (0%)  sender
+edge1:  [  5]   0.00-30.10  sec  22.5 MBytes  6.28 Mbits/sec  2.092 ms  0/16319 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+edge3:  [  5]  29.00-30.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  22.5 MBytes  6.28 Mbits/sec  0.000 ms  0/16260 (0%)  sender
+edge3:  [  5]   0.00-30.07  sec  22.5 MBytes  6.26 Mbits/sec  1.639 ms  0/16259 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+superedge:  [  5]  29.00-30.00  sec  1.02 MBytes  8.57 Mbits/sec  740
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  22.5 MBytes  6.30 Mbits/sec  0.000 ms  0/16320 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  22.5 MBytes  6.30 Mbits/sec  0.486 ms  0/16319 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
+
+------------------------------------------------------------------------------------------------
+
+[1] 1423
+[2] 1424
+superedge:  Connecting to host 192.168.2.10, port 5210
+edge1:  Connecting to host 192.168.2.1, port 5201
+superedge:  [  5] local 192.168.2.2 port 50051 connected to 192.168.2.10 port 5210
+edge3:  Connecting to host 192.168.2.3, port 5203
+edge1:  [  5] local 192.168.2.2 port 46596 connected to 192.168.2.1 port 5201
+edge3:  [  5] local 192.168.2.2 port 40760 connected to 192.168.2.3 port 5203
+superedge:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+superedge:  [  5]   0.00-1.00   sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge1:  [  5]   0.00-1.00   sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [ ID] Interval           Transfer     Bitrate         Total Datagrams
+edge3:  [  5]   0.00-1.00   sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]   1.00-2.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]   1.00-2.00   sec   707 KBytes  5.79 Mbits/sec  500
+edge3:  [  5]   1.00-2.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   2.00-3.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]   2.00-3.00   sec   693 KBytes  5.68 Mbits/sec  490
+edge3:  [  5]   2.00-3.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   3.00-4.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge1:  [  5]   3.00-4.00   sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]   3.00-4.00   sec   707 KBytes  5.79 Mbits/sec  500
+superedge:  [  5]   4.00-5.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge1:  [  5]   4.00-5.00   sec   622 KBytes  5.10 Mbits/sec  440
+edge3:  [  5]   4.00-5.00   sec   636 KBytes  5.21 Mbits/sec  450
+superedge:  [  5]   5.00-6.00   sec   650 KBytes  5.33 Mbits/sec  460
+edge1:  [  5]   5.00-6.00   sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]   5.00-6.00   sec   693 KBytes  5.68 Mbits/sec  490
+superedge:  [  5]   6.00-7.00   sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]   6.00-7.00   sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]   6.00-7.00   sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]   7.00-8.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge1:  [  5]   7.00-8.00   sec   665 KBytes  5.44 Mbits/sec  470
+edge3:  [  5]   7.00-8.00   sec   665 KBytes  5.44 Mbits/sec  470
+superedge:  [  5]   8.00-9.00   sec   566 KBytes  4.63 Mbits/sec  400
+edge1:  [  5]   8.00-9.00   sec   551 KBytes  4.52 Mbits/sec  390
+edge3:  [  5]   8.00-9.00   sec   551 KBytes  4.52 Mbits/sec  390
+superedge:  [  5]   9.00-10.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]   9.00-10.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge3:  [  5]   9.00-10.00  sec   877 KBytes  7.18 Mbits/sec  620
+superedge:  [  5]  10.00-11.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge1:  [  5]  10.00-11.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  10.00-11.00  sec   834 KBytes  6.83 Mbits/sec  590
+superedge:  [  5]  11.00-12.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  11.00-12.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]  11.00-12.00  sec   735 KBytes  6.03 Mbits/sec  520
+superedge:  [  5]  12.00-13.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge1:  [  5]  12.00-13.00  sec   919 KBytes  7.53 Mbits/sec  650
+edge3:  [  5]  12.00-13.00  sec   919 KBytes  7.53 Mbits/sec  650
+superedge:  [  5]  13.00-14.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  13.00-14.00  sec   834 KBytes  6.83 Mbits/sec  590
+edge3:  [  5]  13.00-14.00  sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]  14.00-15.00  sec  1018 KBytes  8.34 Mbits/sec  720
+edge1:  [  5]  14.00-15.00  sec  1.01 MBytes  8.46 Mbits/sec  730
+edge3:  [  5]  14.00-15.00  sec  1.01 MBytes  8.45 Mbits/sec  730
+superedge:  [  5]  15.00-16.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge1:  [  5]  15.00-16.00  sec   820 KBytes  6.72 Mbits/sec  580
+edge3:  [  5]  15.00-16.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  16.00-17.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  [  5]  16.00-17.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge3:  [  5]  16.00-17.00  sec   820 KBytes  6.72 Mbits/sec  580
+superedge:  [  5]  17.00-18.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge1:  [  5]  17.00-18.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge3:  [  5]  17.00-18.00  sec   735 KBytes  6.02 Mbits/sec  520
+superedge:  [  5]  18.00-19.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  18.00-19.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  18.00-19.00  sec   778 KBytes  6.37 Mbits/sec  550
+superedge:  [  5]  19.00-20.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge1:  [  5]  19.00-20.00  sec   735 KBytes  6.02 Mbits/sec  520
+edge3:  [  5]  19.00-20.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  20.00-21.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge1:  [  5]  20.00-21.00  sec   679 KBytes  5.56 Mbits/sec  480
+edge3:  [  5]  20.00-21.00  sec   679 KBytes  5.56 Mbits/sec  480
+superedge:  [  5]  21.00-22.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  21.00-22.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge3:  [  5]  21.00-22.00  sec   863 KBytes  7.06 Mbits/sec  610
+superedge:  [  5]  22.00-23.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge1:  [  5]  22.00-23.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  [  5]  22.00-23.00  sec   806 KBytes  6.60 Mbits/sec  570
+superedge:  [  5]  23.00-24.00  sec   976 KBytes  7.99 Mbits/sec  690
+edge1:  [  5]  23.00-24.00  sec   962 KBytes  7.88 Mbits/sec  680
+edge3:  [  5]  23.00-24.00  sec   962 KBytes  7.88 Mbits/sec  680
+superedge:  [  5]  24.00-25.00  sec   749 KBytes  6.14 Mbits/sec  530
+edge1:  [  5]  24.00-25.00  sec   764 KBytes  6.26 Mbits/sec  540
+edge3:  [  5]  24.00-25.00  sec   749 KBytes  6.14 Mbits/sec  530
+superedge:  [  5]  25.00-26.00  sec   863 KBytes  7.07 Mbits/sec  610
+edge1:  [  5]  25.00-26.00  sec   848 KBytes  6.95 Mbits/sec  600
+edge3:  [  5]  25.00-26.00  sec   848 KBytes  6.95 Mbits/sec  600
+superedge:  [  5]  26.00-27.00  sec   594 KBytes  4.86 Mbits/sec  420
+edge1:  [  5]  26.00-27.00  sec   580 KBytes  4.75 Mbits/sec  410
+edge3:  [  5]  26.00-27.00  sec   551 KBytes  4.52 Mbits/sec  390
+superedge:  [  5]  27.00-28.00  sec   693 KBytes  5.68 Mbits/sec  490
+edge1:  [  5]  27.00-28.00  sec   721 KBytes  5.91 Mbits/sec  510
+edge3:  [  5]  27.00-28.00  sec   764 KBytes  6.26 Mbits/sec  540
+superedge:  [  5]  28.00-29.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge1:  [  5]  28.00-29.00  sec   905 KBytes  7.41 Mbits/sec  640
+edge3:  [  5]  28.00-29.00  sec   891 KBytes  7.30 Mbits/sec  630
+edge1:  [  5]  29.00-30.00  sec   778 KBytes  6.37 Mbits/sec  550
+edge1:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge1:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge1:  [  5]   0.00-30.00  sec  22.7 MBytes  6.36 Mbits/sec  0.000 ms  0/16460 (0%)  sender
+edge1:  [  5]   0.00-30.11  sec  22.7 MBytes  6.33 Mbits/sec  2.776 ms  0/16460 (0%)  receiver
+edge1:
+edge1:  iperf Done.
+superedge:  [  5]  29.00-30.00  sec   792 KBytes  6.49 Mbits/sec  560
+superedge:  - - - - - - - - - - - - - - - - - - - - - - - - -
+superedge:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+superedge:  [  5]   0.00-30.00  sec  22.7 MBytes  6.34 Mbits/sec  0.000 ms  0/16430 (0%)  sender
+superedge:  [  5]   0.00-30.00  sec  22.7 MBytes  6.34 Mbits/sec  1.052 ms  0/16429 (0%)  receiver
+superedge:
+superedge:  iperf Done.
+[1]-  Done                    iperf3 -u -c 192.168.2.1 -T edge1 -p5201 -t 30s -b0 -i1
+pi@edge2:~ $ edge3:  [  5]  29.00-30.00  sec   792 KBytes  6.49 Mbits/sec  560
+edge3:  - - - - - - - - - - - - - - - - - - - - - - - - -
+edge3:  [ ID] Interval           Transfer     Bitrate         Jitter    Lost/Total Datagrams
+edge3:  [  5]   0.00-30.00  sec  22.6 MBytes  6.31 Mbits/sec  0.000 ms  0/16350 (0%)  sender
+edge3:  [  5]   0.00-30.06  sec  22.6 MBytes  6.30 Mbits/sec  1.560 ms  0/16347 (0%)  receiver
+edge3:
+edge3:  iperf Done.
+
+[2]+  Done                    iperf3 -u -c 192.168.2.3 -T edge3 -p5203 -t 30s -b0 -i1
