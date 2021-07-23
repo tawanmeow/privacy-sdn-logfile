@@ -277,6 +277,7 @@ class node_failure (app_manager.RyuApp):
         datapath = ev.msg.datapath
         parser = datapath.ofproto_parser
         self.logger.info('IP address %s sends OFPConfigReply message in %s', datapath.address, current_time)
+        # LOOP: EDGE1->SUPEREDGE
         if 'edge1->superedge' in self.link_down:
             self.logger.info("When the link between edge1 and superedge is down..........")
             if datapath.id == edge2_datapath_id:
@@ -311,3 +312,70 @@ class node_failure (app_manager.RyuApp):
             if datapath.id == superedge_datapath_id:
                 match = parser.OFPMatch(in_port=local, eth_type=0x0806, eth_src=superedge_control_mac,arp_tpa=edge1_control_ip)
                 match = parser.OFPMatch(in_port=local, eth_type=0x0800, eth_src=superedge_control_mac,ipv4_dst=edge1_control_ip)
+        elif 'edge1->edge4' not in self.link_down and 'edge4->edge5' not in self.link_down and 'edge5->edge2' not in self.link_down and 'edge2->superedge' not in self.link_down:
+            self.logger.info("Redirect with edge1->edge4->edge5->edge2->superedge")
+        else:
+            self.logger.info("All alternative control and data routes between edge 1 and superedge are down")
+
+        # LOOP: EDGE2->SUPEREDGE
+        if 'edge2->superedge' in self.link_down:
+            self.logger.info("When the link between edge2 and superedge is down..........")
+            if 'edge2->edge1' not in self.link_down and 'edge1->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge2->edge1->superedge")
+            elif 'edge2->edge3' not in self.link_down and 'edge3->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge2->edge3->superedge")
+            elif 'edge2->edge5' not in self.link_down and 'edge5->edge4' not in self.link_down and 'edge4->edge1' not in self.link_down and 'edge1->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge2->edge5->edge4->edge1->superedge")
+            elif 'edge2->edge5' not in self.link_down and 'edge5->edge6' not in self.link_down and 'edge6->edge3' not in self.link_down and 'edge3->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge2->edge5->edge6->edge3->superedge")
+            else:
+                self.logger.info("All alternative control and data routes between edge 2 and superedge are down")
+
+        # LOOP: EDGE3->SUPEREDGE
+        if 'edge3->superedge' in self.link_down:
+            self.logger.info("When the link between edge3 and superedge is down..........")
+            if 'edge3->edge2' not in self.link_down and 'edge2->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge3->edge2->superedge")
+            elif 'edge3->edge2' not in self.link_down and 'edge2->edge1' not in self.link_down and 'edge1->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge3->edge2->edge1->superedge")
+            elif 'edge3->edge6' not in self.link_down and 'edge6->edge5' not in self.link_down and 'edge5->edge2' not in self.link_down and 'edge2->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge3->edge6->edge5->edge2->superedge")
+            else:
+                self.logger.info("All alternative control and data routes between edge 3 and superedge are down")
+
+        # LOOP: EDGE4->edge1
+        if 'edge4->edge1' in self.link_down and 'edge1->superedge' in self.link_down:
+            self.logger.info("When the links between edge4->edge1->superedge down..........")
+            if 'edge4->edge1' not in self.link_down and 'edge1->edge2' not in self.link_down and 'edge2->superedge':
+                self.logger.info("Redirect with edge4->edge1->edge2->superedge")
+            elif 'edge4->edge5' not in self.link_down and 'edge5->edge2' not in self.link_down and 'edge2->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge4->edge5->edge2->superedge")
+            elif 'edge4->edge5' not in self.link_down and 'edge5->edge6' not in self.link_down and 'edge6->edge3' not in self.link_down and 'edge3->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge4->edge5->edge6->edge3->superedge")
+            else:
+                self.logger.info("All alternative control and data routes between edge 4 and superedge are down")
+
+        # LOOP: EDGE5->EDGE2
+        if 'edge5->edge2' in self.link_down and 'edge2->superedge' in self.link_down:
+            self.logger.info("When the links between edge5->edge2->superedge down..........")
+            if 'edge5->edge2' not in self.link_down and 'edge2->edge1' not in self.link_down and 'edge1->superedge':
+                self.logger.info("Redirect with edge5->edge2->edge1->superedge")
+            elif 'edge5->edge2' not in self.link_down and 'edge2->edge3' not in self.link_down and 'edge3->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge5->edge2->edge3->superedge")
+            elif 'edge5->edge4' not in self.link_down and 'edge4->edge1' not in self.link_down and 'edge1->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge5->edge4->edge1->superedge")
+            elif 'edge5->edge6' not in self.link_down and 'edge6->edge3' not in self.link_down and 'edge3->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge5->edge6->edge3->superedge")
+            else:
+                self.logger.info("All alternative control and data routes between edge 5 and superedge are down")
+
+        if 'edge6->edge3' in self.link_down and 'edge3->superedge' in self.link_down:
+            self.logger.info("When the links between edge6->edge3->superedge down..........")
+            if 'edge6->edge3' not in self.link_down and 'edge3->edge2' not in self.link_down and 'edge2->superedge':
+                self.logger.info("Redirect with edge6->edge3->edge2->superedge")
+            elif 'edge6->edge5' not in self.link_down and 'edge5->edge2' not in self.link_down and 'edge2->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge6->edge5->edge2->superedge")
+            elif 'edge6->edge5' not in self.link_down and 'edge5->edge4' not in self.link_down and 'edge4->edge1' not in self.link_down and 'edge1->superedge' not in self.link_down:
+                self.logger.info("Redirect with edge6->edge5->edge4->edge1->superedge")
+            else:
+                self.logger.info("All alternative control and data routes between edge 6 and superedge are down")
