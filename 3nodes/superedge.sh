@@ -86,6 +86,7 @@ sudo ovs-vsctl set controller br1 connection-mode=out-of-band
 sudo ovs-vsctl set-fail-mode br1 secure
 sudo ovs-vsctl set bridge br1 stp_enable=true
 
+
 #Receive the incoming control traffic to superedge from edge1,edge2, edge3
 
 sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$edge1_control_mac,arp_tpa=$superedge_control_ip,actions=LOCAL

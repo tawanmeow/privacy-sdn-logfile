@@ -85,68 +85,6 @@ sudo ovs-vsctl set controller br1 connection-mode=out-of-band
 sudo ovs-vsctl set-fail-mode br1 secure
 sudo ovs-vsctl set bridge br1 stp_enable=true
 
-#Receive the incoming control traffic to edge2 from edge1,edge3,edge5 and superedge
-#sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$edge1_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-#sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$edge3_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-#sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$edge5_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-#sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$superedge_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-#sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$edge1_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-#sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$edge3_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-#sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$edge5_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-#sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$superedge_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-
-#Receive the incoming data traffic to edge2 from edge1,edge3,edge5 and superedge
-
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$edge1_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$edge3_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$edge5_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=1,dl_src=$superedge_control_mac,arp_tpa=$edge2_control_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$edge1_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$edge3_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$edge5_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$superedge_control_mac,nw_dst=$edge2_control_ip,actions=LOCAL
-
-
-
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=2,dl_src=$edge1_data_mac,arp_tpa=$edge2_data_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=2,dl_src=$edge3_data_mac,arp_tpa=$edge2_data_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=2,dl_src=$edge5_data_mac,arp_tpa=$edge2_data_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=2,dl_src=$superedge_data_mac,arp_tpa=$edge2_data_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=2,dl_src=$edge1_data_mac,nw_dst=$edge2_data_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=2,dl_src=$edge3_data_mac,nw_dst=$edge2_data_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=2,dl_src=$edge5_data_mac,nw_dst=$edge2_data_ip,actions=LOCAL
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=2,dl_src=$superedge_data_mac,nw_dst=$edge2_data_ip,actions=LOCAL
-
-
-#send the control packet from edge2 to other edge1,3,5 and se
-#sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=LOCAL,arp_spa=$superedge_control_ip,actions="resubmit(,1)"
-#sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=LOCAL,nw_dst=$edge1_control_ip,actions=output:1
-#sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=LOCAL,nw_dst=$edge3_control_ip,actions=output:1
-#sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=LOCAL,nw_dst=$edge5_control_ip,actions=output:1
-
-
-#send the data packet from edge2 to other edge1,3,5 and se
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=LOCAL,arp_tpa=$superedge_data_ip,actions=output:2
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=LOCAL,nw_dst=$superedge_data_ip,actions=output:2
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=LOCAL,arp_tpa=$edge1_data_ip,actions=output:2
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=LOCAL,nw_dst=$edge1_data_ip,actions=output:2
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=LOCAL,arp_tpa=$edge3_data_ip,actions=output:2
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=LOCAL,nw_dst=$edge3_data_ip,actions=output:2
-sudo ovs-ofctl add-flow br1 arp,priority=100,in_port=LOCAL,arp_tpa=$edge5_data_ip,actions=output:2
-sudo ovs-ofctl add-flow br1 ip,priority=100,in_port=LOCAL,nw_dst=$edge5_data_ip,actions=output:2
-
-
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=LOCAL,arp_tpa=$superedge_control_ip,actions=output:1
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=LOCAL,nw_dst=$superedge_control_ip,actions=output:1
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=LOCAL,arp_tpa=$edge1_control_ip,actions=output:1
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=LOCAL,nw_dst=$edge1_control_ip,actions=output:1
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=LOCAL,arp_tpa=$edge3_control_ip,actions=output:1
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=LOCAL,nw_dst=$edge3_control_ip,actions=output:1
-sudo ovs-ofctl add-flow br0 arp,priority=100,in_port=LOCAL,arp_tpa=$edge5_control_ip,actions=output:1
-sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=LOCAL,nw_dst=$edge5_control_ip,actions=output:1
-
-
-
 #Relay the incoming  control traffic for edge1 @edge2
 
 #sudo ovs-ofctl add-flow br0 ip,priority=100,in_port=1,dl_src=$superedge_control_mac,nw_dst=$edge1_control_ip,actions="resubmit(,2)" #e1
