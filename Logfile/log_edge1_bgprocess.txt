@@ -1,0 +1,222 @@
+# Run shell script as background using '&' command.
+
+pi@edge1:~ $ ping 192.168.2.1
+PING 192.168.2.1 (192.168.2.1) 56(84) bytes of data.
+64 bytes from 192.168.2.1: icmp_seq=1 ttl=64 time=0.167 ms
+^C
+--- 192.168.2.1 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.167/0.167/0.167/0.000 ms
+pi@edge1:~ $ ping 192.168.2.2
+PING 192.168.2.2 (192.168.2.2) 56(84) bytes of data.
+64 bytes from 192.168.2.2: icmp_seq=1 ttl=64 time=3.32 ms
+^C
+--- 192.168.2.2 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 3.320/3.320/3.320/0.000 ms
+pi@edge1:~ $ ping 192.168.2.3
+PING 192.168.2.3 (192.168.2.3) 56(84) bytes of data.
+64 bytes from 192.168.2.3: icmp_seq=1 ttl=64 time=7.86 ms
+^C
+--- 192.168.2.3 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 7.856/7.856/7.856/0.000 ms
+pi@edge1:~ $ ping 192.168.2.4
+PING 192.168.2.4 (192.168.2.4) 56(84) bytes of data.
+64 bytes from 192.168.2.4: icmp_seq=1 ttl=64 time=3.41 ms
+^C
+--- 192.168.2.4 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 3.410/3.410/3.410/0.000 ms
+pi@edge1:~ $ ping 192.168.2.5
+PING 192.168.2.5 (192.168.2.5) 56(84) bytes of data.
+64 bytes from 192.168.2.5: icmp_seq=1 ttl=64 time=60.7 ms
+^C
+--- 192.168.2.5 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 60.695/60.695/60.695/0.000 ms
+pi@edge1:~ $ ping 192.168.2.6
+PING 192.168.2.6 (192.168.2.6) 56(84) bytes of data.
+64 bytes from 192.168.2.6: icmp_seq=1 ttl=64 time=13.3 ms
+^C
+--- 192.168.2.6 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 13.253/13.253/13.253/0.000 ms
+pi@edge1:~ $ ping 192.168.2.10
+PING 192.168.2.10 (192.168.2.10) 56(84) bytes of data.
+64 bytes from 192.168.2.10: icmp_seq=1 ttl=64 time=8.92 ms
+^C
+--- 192.168.2.10 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 8.924/8.924/8.924/0.000 ms
+pi@edge1:~ $ ping 10.0.0.
+1^C
+pi@edge1:~ $ ping 10.0.0.1
+PING 10.0.0.1 (10.0.0.1) 56(84) bytes of data.
+64 bytes from 10.0.0.1: icmp_seq=1 ttl=64 time=0.172 ms
+^C
+--- 10.0.0.1 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 0.172/0.172/0.172/0.000 ms
+pi@edge1:~ $ ping 10.0.0.2
+PING 10.0.0.2 (10.0.0.2) 56(84) bytes of data.
+64 bytes from 10.0.0.2: icmp_seq=1 ttl=64 time=7.78 ms
+^C
+--- 10.0.0.2 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 7.782/7.782/7.782/0.000 ms
+pi@edge1:~ $ ping 10.0.0.3
+PING 10.0.0.3 (10.0.0.3) 56(84) bytes of data.
+64 bytes from 10.0.0.3: icmp_seq=1 ttl=64 time=4.71 ms
+^C
+--- 10.0.0.3 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 4.706/4.706/4.706/0.000 ms
+pi@edge1:~ $ ping 10.0.0.4
+PING 10.0.0.4 (10.0.0.4) 56(84) bytes of data.
+64 bytes from 10.0.0.4: icmp_seq=1 ttl=64 time=3.46 ms
+^C
+--- 10.0.0.4 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 3.457/3.457/3.457/0.000 ms
+pi@edge1:~ $ ping 10.0.0.5
+PING 10.0.0.5 (10.0.0.5) 56(84) bytes of data.
+64 bytes from 10.0.0.5: icmp_seq=1 ttl=64 time=7.81 ms
+^C
+--- 10.0.0.5 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 7.814/7.814/7.814/0.000 ms
+pi@edge1:~ $ ping 10.0.0.6
+PING 10.0.0.6 (10.0.0.6) 56(84) bytes of data.
+^C
+--- 10.0.0.6 ping statistics ---
+1 packets transmitted, 0 received, 100% packet loss, time 0ms
+
+pi@edge1:~ $ ping 10.0.0.6
+PING 10.0.0.6 (10.0.0.6) 56(84) bytes of data.
+64 bytes from 10.0.0.6: icmp_seq=1 ttl=64 time=6.67 ms
+^C
+--- 10.0.0.6 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 6.665/6.665/6.665/0.000 ms
+pi@edge1:~ $ ping 10.0.0.10
+PING 10.0.0.10 (10.0.0.10) 56(84) bytes of data.
+64 bytes from 10.0.0.10: icmp_seq=1 ttl=64 time=8.69 ms
+^C
+--- 10.0.0.10 ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 8.690/8.690/8.690/0.000 ms
+pi@edge1:~ $ sudo ./yedge1.sh &
+[1] 1283
+pi@edge1:~ $ sudo sysctl -p
+[1]+  Done                    sudo ./yedge1.sh
+pi@edge1:~ $ tcpdump -w e4_to_se.pcap
+tcpdump: eth0: You don't have permission to capture on that device
+(socket: Operation not permitted)
+pi@edge1:~ $ sudo tcpdump -w e4_to_se.pcap -i wlan1
+tcpdump: listening on wlan1, link-type EN10MB (Ethernet), capture size 262144 by                                                                                                              tes
+^C51 packets captured
+51 packets received by filter
+0 packets dropped by kernel
+pi@edge1:~ $ ifconfig
+br0: flags=4419<UP,BROADCAST,RUNNING,PROMISC,MULTICAST>  mtu 1500
+        inet 10.0.0.1  netmask 255.255.255.0  broadcast 10.0.0.255
+        inet6 fe80::9a48:27ff:fee2:bf04  prefixlen 64  scopeid 0x20<link>
+        ether 98:48:27:e2:bf:04  txqueuelen 1000  (Ethernet)
+        RX packets 390  bytes 25420 (24.8 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 597  bytes 50288 (49.1 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br1: flags=4419<UP,BROADCAST,RUNNING,PROMISC,MULTICAST>  mtu 1500
+        inet 192.168.2.1  netmask 255.255.255.0  broadcast 192.168.2.255
+        inet6 fe80::9a48:27ff:fede:a2ca  prefixlen 64  scopeid 0x20<link>
+        ether 98:48:27:de:a2:ca  txqueuelen 1000  (Ethernet)
+        RX packets 4  bytes 224 (224.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 60  bytes 6672 (6.5 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.106  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::ba27:ebff:fe44:68f0  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:44:68:f0  txqueuelen 1000  (Ethernet)
+        RX packets 1977  bytes 179309 (175.1 KiB)
+        RX errors 0  dropped 1  overruns 0  frame 0
+        TX packets 955  bytes 127306 (124.3 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 291  bytes 28886 (28.2 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 291  bytes 28886 (28.2 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan1: flags=4419<UP,BROADCAST,RUNNING,PROMISC,MULTICAST>  mtu 1500
+        inet6 fe80::9a48:27ff:fede:a2ca  prefixlen 64  scopeid 0x20<link>
+        ether 98:48:27:de:a2:ca  txqueuelen 1000  (Ethernet)
+        RX packets 1421  bytes 113748 (111.0 KiB)
+        RX errors 0  dropped 645  overruns 0  frame 0
+        TX packets 152  bytes 12802 (12.5 KiB)
+        TX errors 0  dropped 309 overruns 0  carrier 0  collisions 0
+
+wlan2: flags=4419<UP,BROADCAST,RUNNING,PROMISC,MULTICAST>  mtu 1500
+        inet6 fe80::9a48:27ff:fee2:bf04  prefixlen 64  scopeid 0x20<link>
+        ether 98:48:27:e2:bf:04  txqueuelen 1000  (Ethernet)
+        RX packets 2852  bytes 212552 (207.5 KiB)
+        RX errors 0  dropped 679  overruns 0  frame 0
+        TX packets 900  bytes 81745 (79.8 KiB)
+        TX errors 0  dropped 422 overruns 0  carrier 0  collisions 0
+
+pi@edge1:~ $ ifconfig wlan1 down
+SIOCSIFFLAGS: Operation not permitted
+pi@edge1:~ $ sudo ifconfig wlan1 down
+pi@edge1:~ $ sudo sysctl -p
+pi@edge1:~ $
+pi@edge1:~ $ ifconfig
+br0: flags=4419<UP,BROADCAST,RUNNING,PROMISC,MULTICAST>  mtu 1500
+        inet 10.0.0.1  netmask 255.255.255.0  broadcast 10.0.0.255
+        inet6 fe80::9a48:27ff:fee2:bf04  prefixlen 64  scopeid 0x20<link>
+        ether 98:48:27:e2:bf:04  txqueuelen 1000  (Ethernet)
+        RX packets 1712  bytes 123220 (120.3 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 3206  bytes 235556 (230.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+br1: flags=4419<UP,BROADCAST,RUNNING,PROMISC,MULTICAST>  mtu 1500
+        inet 192.168.2.1  netmask 255.255.255.0  broadcast 192.168.2.255
+        inet6 fe80::9a48:27ff:fede:a2ca  prefixlen 64  scopeid 0x20<link>
+        ether 98:48:27:de:a2:ca  txqueuelen 1000  (Ethernet)
+        RX packets 4  bytes 224 (224.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 68  bytes 7394 (7.2 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.1.106  netmask 255.255.255.0  broadcast 192.168.1.255
+        inet6 fe80::ba27:ebff:fe44:68f0  prefixlen 64  scopeid 0x20<link>
+        ether b8:27:eb:44:68:f0  txqueuelen 1000  (Ethernet)
+        RX packets 3073  bytes 274015 (267.5 KiB)
+        RX errors 0  dropped 1  overruns 0  frame 0
+        TX packets 1169  bytes 164963 (161.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 291  bytes 28886 (28.2 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 291  bytes 28886 (28.2 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+wlan2: flags=4419<UP,BROADCAST,RUNNING,PROMISC,MULTICAST>  mtu 1500
+        inet6 fe80::9a48:27ff:fee2:bf04  prefixlen 64  scopeid 0x20<link>
+        ether 98:48:27:e2:bf:04  txqueuelen 1000  (Ethernet)
+        RX packets 9868  bytes 883830 (863.1 KiB)
+        RX errors 0  dropped 679  overruns 0  frame 0
+        TX packets 7608  bytes 734078 (716.8 KiB)
+        TX errors 0  dropped 422 overruns 0  carrier 0  collisions 0

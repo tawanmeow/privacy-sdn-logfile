@@ -1,0 +1,126 @@
+loading app superedge_x.py
+loading app ryu.controller.ofp_handler
+instantiating app superedge_x.py of link_failure
+instantiating app ryu.controller.ofp_handler of OFPHandler
+edge3_data (IP address ('10.0.0.3', 46718)) is connected,1
+edge3_data IP address is connected ('10.0.0.3', 46718) in Wed Aug 18 16:04:08 2021,1
+Current Conneced edges to RYU controller are ['edge3_data']
+edge2_control (IP address ('10.0.0.2', 56082)) is connected,1
+edge2_control IP address is connected ('10.0.0.2', 56082) in Wed Aug 18 16:04:08 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control']
+edge5_data (IP address ('10.0.0.5', 43132)) is connected,1
+edge5_data IP address is connected ('10.0.0.5', 43132) in Wed Aug 18 16:04:09 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data']
+edge6_control (IP address ('10.0.0.6', 53160)) is connected,1
+edge6_control IP address is connected ('10.0.0.6', 53160) in Wed Aug 18 16:04:10 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control']
+edge4_data (IP address ('10.0.0.4', 49548)) is connected,1
+edge4_data IP address is connected ('10.0.0.4', 49548) in Wed Aug 18 16:04:15 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data']
+********************************************* Currently no flow stats data *********************************************
+Currently no data
+IP address ('10.0.0.3', 46718) sends OFPConfigReply message in Wed Aug 18 16:04:23 2021
+IP address ('10.0.0.2', 56082) sends OFPConfigReply message in Wed Aug 18 16:04:23 2021
+IP address ('10.0.0.6', 53160) sends OFPConfigReply message in Wed Aug 18 16:04:23 2021
+IP address ('10.0.0.4', 49548) sends OFPConfigReply message in Wed Aug 18 16:04:23 2021
+IP address ('10.0.0.5', 43132) sends OFPConfigReply message in Wed Aug 18 16:04:23 2021
+edge3_control (IP address ('10.0.0.3', 46722)) is connected,1
+edge3_control IP address is connected ('10.0.0.3', 46722) in Wed Aug 18 16:04:25 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control']
+edge2_data (IP address ('10.0.0.2', 56086)) is connected,1
+edge2_data IP address is connected ('10.0.0.2', 56086) in Wed Aug 18 16:04:25 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data']
+superedge_data (IP address ('10.0.0.10', 54782)) is connected,1
+superedge_data IP address is connected ('10.0.0.10', 54782) in Wed Aug 18 16:04:25 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data']
+edge6_data (IP address ('10.0.0.6', 53164)) is connected,1
+edge6_data IP address is connected ('10.0.0.6', 53164) in Wed Aug 18 16:04:26 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data']
+edge1_data (IP address ('10.0.0.1', 44044)) is connected,1
+edge1_data IP address is connected ('10.0.0.1', 44044) in Wed Aug 18 16:04:29 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data']
+------------------------------------------------ Flow statistics reply -------------------------------------------------
++---------------+---------+-----------+------------+----------+----------+------+------+------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+|      name     | dur_sec |  dur_nsec | packet_cnt | byte_cnt | priority | idle | hard | flag |                                                     match                                                      |                                                                   instructions                                                                  |
++---------------+---------+-----------+------------+----------+----------+------+------+------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| edge2_control |   5787  | 879000000 |     2      |    84    |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:1d:f4', 'eth_type': 2054, 'arp_tpa': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5787  | 824000000 |    110     |   4620   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2054, 'arp_tpa': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5787  | 768000000 |     1      |    98    |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:1d:f4', 'eth_type': 2048, 'ipv4_dst': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5787  | 713000000 |    1803    |  127128  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5786  | 992000000 |    1918    |  149844  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.5'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=3,type=65535)],len=24,type=4)] |
+| edge2_control |   5786  | 929000000 |    3839    |  303434  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:1d:f4', 'eth_type': 2048, 'ipv4_dst': '10.0.0.10'}) | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=4,type=65535)],len=24,type=4)] |
+| edge2_control |   5787  |  76000000 |     47     |   1974   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_type': 2054, 'arp_tpa': '10.0.0.5', 'arp_sha': '98:48:27:e2:e3:3a'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=3,type=65535)],len=24,type=4)] |
+| edge2_control |   5787  |  33000000 |    233     |   9786   |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_type': 2054, 'arp_tpa': '10.0.0.10', 'arp_sha': '98:48:27:e0:1d:f4'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=4,type=65535)],len=24,type=4)] |
+| edge2_control |   5786  | 531000000 |    3209    |  181279  |    1     |  0   |  0   |  4   |                                      OFPMatch(oxm_fields={'in_port': 1})                                       |                                                                        []                                                                       |
+| edge6_control |   4966  |  17000000 |     47     |   1974   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:21:2a', 'eth_type': 2054, 'arp_tpa': '10.0.0.6'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge6_control |   4965  | 933000000 |    1969    |  152992  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:21:2a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.6'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge6_control |   4965  | 315000000 |    2835    |  160026  |    1     |  0   |  0   |  4   |                                      OFPMatch(oxm_fields={'in_port': 1})                                       |                                                                        []                                                                       |
++---------------+---------+-----------+------------+----------+----------+------+------+------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+Currently no data
+IP address ('10.0.0.3', 46718) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.2', 56082) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.10', 54782) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.4', 49548) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.1', 44044) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.6', 53164) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.3', 46722) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.2', 56086) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.5', 43132) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+IP address ('10.0.0.6', 53160) sends OFPConfigReply message in Wed Aug 18 16:04:41 2021
+edge1_control (IP address ('10.0.0.1', 44046)) is connected,1
+edge1_control IP address is connected ('10.0.0.1', 44046) in Wed Aug 18 16:04:45 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data', 'edge1_control']
+edge4_control (IP address ('10.0.0.4', 49552)) is connected,1
+edge4_control IP address is connected ('10.0.0.4', 49552) in Wed Aug 18 16:04:47 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data', 'edge1_control', 'edge4_control']
+------------------------------------------------ Flow statistics reply -------------------------------------------------
++---------------+---------+-----------+------------+----------+----------+------+------+------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+|      name     | dur_sec |  dur_nsec | packet_cnt | byte_cnt | priority | idle | hard | flag |                                                     match                                                      |                                                                   instructions                                                                  |
++---------------+---------+-----------+------------+----------+----------+------+------+------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+| edge2_control |   5805  | 957000000 |     2      |    84    |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:1d:f4', 'eth_type': 2054, 'arp_tpa': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5805  | 901000000 |    110     |   4620   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2054, 'arp_tpa': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5805  | 845000000 |     1      |    98    |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:1d:f4', 'eth_type': 2048, 'ipv4_dst': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5805  | 790000000 |    1820    |  128410  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.2'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge2_control |   5805  |  69000000 |    1924    |  150336  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.5'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=3,type=65535)],len=24,type=4)] |
+| edge2_control |   5805  |  6000000  |    3852    |  304376  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:1d:f4', 'eth_type': 2048, 'ipv4_dst': '10.0.0.10'}) | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=4,type=65535)],len=24,type=4)] |
+| edge2_control |   5805  | 154000000 |     47     |   1974   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_type': 2054, 'arp_tpa': '10.0.0.5', 'arp_sha': '98:48:27:e2:e3:3a'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=3,type=65535)],len=24,type=4)] |
+| edge2_control |   5805  | 111000000 |    233     |   9786   |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_type': 2054, 'arp_tpa': '10.0.0.10', 'arp_sha': '98:48:27:e0:1d:f4'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=4,type=65535)],len=24,type=4)] |
+| edge2_control |   5804  | 609000000 |    3219    |  181817  |    1     |  0   |  0   |  4   |                                      OFPMatch(oxm_fields={'in_port': 1})                                       |                                                                        []                                                                       |
+| edge6_control |   4984  |  98000000 |     47     |   1974   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:21:2a', 'eth_type': 2054, 'arp_tpa': '10.0.0.6'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge6_control |   4984  |  14000000 |    1987    |  154340  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e0:21:2a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.6'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge6_control |   4983  | 396000000 |    2845    |  160564  |    1     |  0   |  0   |  4   |                                      OFPMatch(oxm_fields={'in_port': 1})                                       |                                                                        []                                                                       |
+| edge3_control |   5497  | 708000000 |     2      |    84    |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e8:c7', 'eth_type': 2054, 'arp_tpa': '10.0.0.3'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge3_control |   5497  | 666000000 |     96     |   4032   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2054, 'arp_tpa': '10.0.0.3'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge3_control |   5497  | 624000000 |     9      |   882    |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e8:c7', 'eth_type': 2048, 'ipv4_dst': '10.0.0.3'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge3_control |   5497  | 564000000 |    1851    |  141724  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.3'})  |                    [OFPInstructionActions(actions=[OFPActionOutput(len=16,max_len=0,port=4294967294,type=0)],len=24,type=4)]                    |
+| edge3_control |   5496  | 819000000 |    1987    |  154340  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e3:3a', 'eth_type': 2048, 'ipv4_dst': '10.0.0.6'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=3,type=65535)],len=24,type=4)] |
+| edge3_control |   5496  | 778000000 |    3794    |  304536  |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_src': '98:48:27:e2:e8:c7', 'eth_type': 2048, 'ipv4_dst': '10.0.0.10'}) | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=4,type=65535)],len=24,type=4)] |
+| edge3_control |   5496  | 902000000 |     47     |   1974   |   100    |  0   |  0   |  4   |  OFPMatch(oxm_fields={'in_port': 1, 'eth_type': 2054, 'arp_tpa': '10.0.0.6', 'arp_sha': '98:48:27:e2:e3:3a'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=3,type=65535)],len=24,type=4)] |
+| edge3_control |   5496  | 859000000 |    137     |   5754   |   100    |  0   |  0   |  4   | OFPMatch(oxm_fields={'in_port': 1, 'eth_type': 2054, 'arp_tpa': '10.0.0.10', 'arp_sha': '98:48:27:e2:e8:c7'})  | [OFPInstructionActions(actions=[NXActionResubmitTable(experimenter=8992,in_port=65528,len=16,subtype=14,table_id=4,type=65535)],len=24,type=4)] |
+| edge3_control |   5496  | 294000000 |    3055    |  172884  |    1     |  0   |  0   |  4   |                                      OFPMatch(oxm_fields={'in_port': 1})                                       |                                                                        []                                                                       |
++---------------+---------+-----------+------------+----------+----------+------+------+------+----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
+hub: uncaught exception: Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/dist-packages/ryu/lib/hub.py", line 60, in _launch
+    return func(*args, **kwargs)
+  File "/home/superedge/Desktop/Privacy_SDN_Edge_IoT/flowrules/flowrules_x/superedge_x.py", line 137, in _monitor
+    self.check_all_links()
+  File "/home/superedge/Desktop/Privacy_SDN_Edge_IoT/flowrules/flowrules_x/superedge_x.py", line 254, in check_all_links
+    self.check_link('superedge_control', edge1_control_mac, superedge_control_ip, 'control:edge1->superedge')
+  File "/home/superedge/Desktop/Privacy_SDN_Edge_IoT/flowrules/flowrules_x/superedge_x.py", line 292, in check_link
+    index = [i for i,_ in enumerate(self.flow_stats[deviceName]) if ('eth_src' in _.match) and (_.match['eth_src'] == from_mac) and ('arp_tpa' in _.match) and (_.match['arp_tpa'] == to_ip)]
+KeyError: 'superedge_control'
+
+superedge_control (IP address ('10.0.0.10', 54852)) is connected,1
+superedge_control IP address is connected ('10.0.0.10', 54852) in Wed Aug 18 16:05:14 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data', 'edge1_control', 'edge4_control', 'superedge_control']
+edge5_control (IP address ('10.0.0.5', 43142)) is connected,1
+edge5_control IP address is connected ('10.0.0.5', 43142) in Wed Aug 18 16:05:29 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data', 'edge1_control', 'edge4_control', 'superedge_control', 'edge5_control']
+edge4_control IP address is leaved ('10.0.0.4', 49552) in Wed Aug 18 16:06:37 2021,0
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge4_data', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data', 'edge1_control', 'superedge_control', 'edge5_control']
+edge4_data IP address is leaved ('10.0.0.4', 49548) in Wed Aug 18 16:06:38 2021,0
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data', 'edge1_control', 'superedge_control', 'edge5_control']
+edge4_control (IP address ('10.0.0.4', 49562)) is connected,1
+edge4_control IP address is connected ('10.0.0.4', 49562) in Wed Aug 18 16:06:42 2021,1
+Current Conneced edges to RYU controller are ['edge3_data', 'edge2_control', 'edge5_data', 'edge6_control', 'edge3_control', 'edge2_data', 'superedge_data', 'edge6_data', 'edge1_data', 'edge1_control', 'superedge_control', 'edge5_control', 'edge4_control']
+

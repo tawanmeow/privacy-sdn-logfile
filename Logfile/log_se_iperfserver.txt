@@ -1,0 +1,50 @@
+superedge@edgecps-nectec:~$ iperf3 -s
+-----------------------------------------------------------
+Server listening on 5201
+-----------------------------------------------------------
+Accepted connection from 192.168.2.4, port 40138
+[  5] local 192.168.2.10 port 5201 connected to 192.168.2.4 port 59950
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  5]   0.00-1.00   sec   127 KBytes  1.04 Mbits/sec  108349.169 ms  0/90 (0%)  
+[  5]   1.00-2.00   sec   127 KBytes  1.04 Mbits/sec  325.854 ms  0/90 (0%)  
+[  5]   2.00-3.00   sec   129 KBytes  1.05 Mbits/sec  1.280 ms  0/91 (0%)  
+[  5]   3.00-4.00   sec   129 KBytes  1.05 Mbits/sec  0.306 ms  0/91 (0%)  
+[  5]   4.00-5.00   sec   127 KBytes  1.04 Mbits/sec  0.607 ms  0/90 (0%)  
+[  5]   5.00-6.00   sec   129 KBytes  1.05 Mbits/sec  0.353 ms  0/91 (0%)  
+[  5]   6.00-7.00   sec   127 KBytes  1.04 Mbits/sec  0.431 ms  0/90 (0%)  
+[  5]   7.00-8.00   sec   127 KBytes  1.04 Mbits/sec  0.356 ms  0/90 (0%)  
+[  5]   8.00-9.00   sec   129 KBytes  1.05 Mbits/sec  0.276 ms  0/91 (0%)  
+[  5]   9.00-10.00  sec   129 KBytes  1.05 Mbits/sec  0.432 ms  0/91 (0%)  
+[  5]  10.00-11.00  sec   127 KBytes  1.04 Mbits/sec  0.536 ms  0/90 (0%)  
+[  5]  11.00-12.00  sec   129 KBytes  1.05 Mbits/sec  0.725 ms  0/91 (0%)  
+[  5]  12.00-13.00  sec   127 KBytes  1.04 Mbits/sec  0.547 ms  0/90 (0%)  
+[  5]  13.00-14.00  sec   129 KBytes  1.05 Mbits/sec  0.910 ms  0/91 (0%)  
+[  5]  14.00-15.00  sec   127 KBytes  1.04 Mbits/sec  1.542 ms  0/90 (0%)  
+[  5]  15.00-16.00  sec   109 KBytes   892 Kbits/sec  1.379 ms  0/77 (0%)  
+[  5]  16.00-17.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  17.00-18.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  18.00-19.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  19.00-20.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  20.00-21.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  21.00-22.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  22.00-23.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  23.00-24.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  24.00-25.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  25.00-26.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  26.00-27.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  27.00-28.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  28.00-29.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  29.00-30.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  30.00-31.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  31.00-32.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  32.00-33.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  33.00-34.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  34.00-35.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  35.00-36.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+[  5]  36.00-37.00  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+^C[  5]  37.00-37.44  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/0 (0%)  
+- - - - - - - - - - - - - - - - - - - - - - - - -
+[ ID] Interval           Transfer     Bandwidth       Jitter    Lost/Total Datagrams
+[  5]   0.00-37.44  sec  0.00 Bytes  0.00 bits/sec  1.379 ms  0/1434 (0%)  
+iperf3: interrupt - the server has terminated
+
