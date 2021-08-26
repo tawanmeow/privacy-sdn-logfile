@@ -160,7 +160,6 @@ class node_failure (app_manager.RyuApp):
                 l = getDeviceArr(self.datapaths.keys())
                 self.logger.info("Current Conneced Switches to RYU controller are %s", l)
 
-
 ###ForTestingPurpose
 
     @set_ev_cls(ofp_event.EventOFPSwitchFeatures, CONFIG_DISPATCHER)
